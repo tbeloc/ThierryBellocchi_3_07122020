@@ -1,0 +1,96 @@
+// @charset "UTF-8";
+
+// 1. Configuration and helpers
+// @import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
+
+// 2. Vendors
+// @import "vendors/normalize";
+
+// 3. Base stuff
+// @import "base/base", "base/fonts", "base/typography", "base/helpers";
+
+// 4. Layout-related sections
+// @import "layout/header", "layout/footer";
+
+// 5. Components
+// @import "components/button";
+
+// 6. Page-specific styles
+// @import "pages/home";
+
+// 7. Themes
+// @import "themes/default";
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../font/Shrikhand-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto-Light.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto";
+  background-color: grey;
+}
+
+p {
+  margin: 0;
+}
+
+$restaurants_width: 33.5rem;
+
+.restaurants {
+  width: $restaurants_width;
+  height: 25.1rem;
+  border-radius: 1rem;
+  background-color: white;
+  font-size: 1.6rem;
+
+  .restaurants__photo {
+    display: block;
+    width: $restaurants_width;
+    height: 17.4rem;
+    object-fit: cover;
+    object-position: 50% 105%;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .restaurants__specification {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 7.7rem;
+
+    .restaurants__txt {
+      align-self: center;
+      margin-left: 1.4rem;
+
+      .restaurants__plat {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      .restaurants__etablissement {
+        font-weight: normal;
+      }
+    }
+
+    .restaurants__like {
+      height: 4.3rem;
+      align-self: center;
+      margin-top: 1rem;
+      margin-right: 2rem;
+    }
+  }
+}
