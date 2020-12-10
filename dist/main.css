@@ -36,7 +36,7 @@ p {
       object-fit: cover;
       object-position: 50% 108%;
       border-radius: 1rem 1rem 0 0; }
-  .restaurants--new {
+  .restaurants_state {
     width: 8rem;
     height: 2.9rem;
     position: absolute;
@@ -53,9 +53,12 @@ p {
     font-weight: bold;
     font-family: "Roboto";
     font-size: 1.33rem;
-    display: flex;
     justify-content: center;
     align-items: center; }
+    .restaurants_state--new {
+      display: flex; }
+    .restaurants_state--old {
+      display: none; }
   .restaurants__specification {
     display: flex;
     justify-content: space-between;

@@ -93,7 +93,7 @@ $restaurants_width: 33.5rem;
     }
   }
 
-  &--new {
+  &_state {
     width: 8rem;
     height: 2.9rem;
     position: absolute;
@@ -110,9 +110,15 @@ $restaurants_width: 33.5rem;
     font-weight: bold;
     font-family: "Roboto";
     font-size: 1.33rem;
-    display: flex;
     justify-content: center;
     align-items: center;
+
+    &--new {
+      display: flex;
+    }
+    &--old {
+      display: none;
+    }
   }
 
   &__specification {
