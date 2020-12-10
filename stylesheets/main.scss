@@ -21,6 +21,29 @@
 // 7. Themes
 // @import "themes/default";
 
+// @charset "UTF-8";
+
+// 1. Configuration and helpers
+// @import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
+
+// 2. Vendors
+// @import "vendors/normalize";
+
+// 3. Base stuff
+// @import "base/base", "base/fonts", "base/typography", "base/helpers";
+
+// 4. Layout-related sections
+// @import "layout/header", "layout/footer";
+
+// 5. Components
+// @import "components/button";
+
+// 6. Page-specific styles
+// @import "pages/home";
+
+// 7. Themes
+// @import "themes/default";
+
 @font-face {
   font-family: "Shrikhand";
   src: url("../font/Shrikhand-Regular.ttf") format("truetype");
@@ -57,40 +80,76 @@ $restaurants_width: 33.5rem;
   background-color: white;
   font-size: 1.6rem;
 
-  .restaurants__photo {
-    display: block;
-    width: $restaurants_width;
-    height: 17.4rem;
-    object-fit: cover;
-    object-position: 50% 105%;
-    border-radius: 1rem 1rem 0 0;
+  &__vignette {
+    position: relative;
+    overflow: hidden;
+    &__photo {
+      display: block;
+      width: $restaurants_width;
+      height: 17.4rem;
+      object-fit: cover;
+      object-position: 50% 108%;
+      border-radius: 1rem 1rem 0 0;
+    }
   }
 
-  .restaurants__specification {
+  &--new {
+    width: 8rem;
+    height: 2.9rem;
+    position: absolute;
+    top: 1.3rem;
+    left: 24.1rem;
+    background-color: #99e2d0;
+    color: #008766;
+    border-left: 0.1rem solid rgba(153, 226, 208, 0.5);
+    border-right: 0.1rem solid rgba(153, 226, 208, 0.5);
+    border-radius: 0.2rem;
+    border-top: none;
+    border-bottom: none;
+    background-clip: padding-box;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 1.33rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__specification {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     height: 7.7rem;
 
-    .restaurants__txt {
+    &__txt {
       align-self: center;
       margin-left: 1.4rem;
 
-      .restaurants__plat {
+      &__plat {
         font-weight: bold;
         margin-bottom: 0.5rem;
       }
 
-      .restaurants__etablissement {
+      &__etablissement {
         font-weight: normal;
       }
     }
 
-    .restaurants__like {
-      height: 4.3rem;
-      align-self: center;
-      margin-top: 1rem;
+    &__avis {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
       margin-right: 2rem;
+
+      &--nolike {
+        color: black;
+      }
+
+      &--like {
+        color: red;
+      }
     }
   }
 }

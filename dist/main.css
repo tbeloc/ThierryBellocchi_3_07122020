@@ -26,28 +26,57 @@ p {
   border-radius: 1rem;
   background-color: white;
   font-size: 1.6rem; }
-  .restaurants .restaurants__photo {
-    display: block;
-    width: 33.5rem;
-    height: 17.4rem;
-    object-fit: cover;
-    object-position: 50% 105%;
-    border-radius: 1rem 1rem 0 0; }
-  .restaurants .restaurants__specification {
+  .restaurants__vignette {
+    position: relative;
+    overflow: hidden; }
+    .restaurants__vignette__photo {
+      display: block;
+      width: 33.5rem;
+      height: 17.4rem;
+      object-fit: cover;
+      object-position: 50% 108%;
+      border-radius: 1rem 1rem 0 0; }
+  .restaurants--new {
+    width: 8rem;
+    height: 2.9rem;
+    position: absolute;
+    top: 1.3rem;
+    left: 24.1rem;
+    background-color: #99e2d0;
+    color: #008766;
+    border-left: 0.1rem solid rgba(153, 226, 208, 0.5);
+    border-right: 0.1rem solid rgba(153, 226, 208, 0.5);
+    border-radius: 0.2rem;
+    border-top: none;
+    border-bottom: none;
+    background-clip: padding-box;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 1.33rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .restaurants__specification {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     height: 7.7rem; }
-    .restaurants .restaurants__specification .restaurants__txt {
+    .restaurants__specification__txt {
       align-self: center;
       margin-left: 1.4rem; }
-      .restaurants .restaurants__specification .restaurants__txt .restaurants__plat {
+      .restaurants__specification__txt__plat {
         font-weight: bold;
         margin-bottom: 0.5rem; }
-      .restaurants .restaurants__specification .restaurants__txt .restaurants__etablissement {
+      .restaurants__specification__txt__etablissement {
         font-weight: normal; }
-    .restaurants .restaurants__specification .restaurants__like {
-      height: 4.3rem;
-      align-self: center;
-      margin-top: 1rem;
+    .restaurants__specification__avis {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
       margin-right: 2rem; }
+      .restaurants__specification__avis--nolike {
+        color: black; }
+      .restaurants__specification__avis--like {
+        color: red; }
