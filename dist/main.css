@@ -5,7 +5,17 @@
 @font-face {
   font-family: "Roboto";
   src: url("../font/Roboto-Light.ttf") format("truetype");
+  font-weight: lighter; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto-Regular.ttf") format("truetype");
   font-weight: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500; }
 
 @font-face {
   font-family: "Roboto";
@@ -15,17 +25,69 @@
 html {
   font-size: 62.5%;
   font-family: "Roboto";
-  background-color: grey; }
+  background-color: white; }
 
 p {
   margin: 0; }
+
+.home {
+  width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0; }
+
+.headerMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .headerMobile__logo {
+    height: 7.3rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: -1rem; }
+    .headerMobile__logo__svg {
+      width: 16.5rem; }
+  .headerMobile__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37.5rem;
+    height: 5rem;
+    background: #cecece;
+    background: linear-gradient(180deg, #cecece 0%, #d5d5d5 1%, #dddddd 2%, #e3e3e3 3%, #e8e8e8 4%, #eaeaea 100%); }
+    .headerMobile__location__mylocation {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 16.5rem; }
+      .headerMobile__location__mylocation__picto {
+        font-size: 1.6rem;
+        margin-bottom: 0.3rem;
+        padding-right: 1.6rem; }
+      .headerMobile__location__mylocation__input {
+        color: black;
+        background-color: #eaeaea;
+        border-style: none;
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 0;
+        width: 11rem;
+        font-family: "Roboto";
+        font-weight: 500;
+        margin-right: 2.8rem; }
 
 .restaurants {
   width: 33.5rem;
   height: 25.1rem;
   border-radius: 1rem;
   background-color: white;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  box-shadow: 0.7rem 0.7rem 0.7rem #ededed;
+  margin-bottom: 1.8rem; }
   .restaurants__vignette {
     position: relative;
     overflow: hidden; }
@@ -36,6 +98,8 @@ p {
       object-fit: cover;
       object-position: 50% 108%;
       border-radius: 1rem 1rem 0 0; }
+    .restaurants__vignette__photo-lapalette {
+      object-position: 50% 61%; }
   .restaurants_state {
     width: 8rem;
     height: 2.9rem;
@@ -79,7 +143,68 @@ p {
       font-size: 2rem;
       margin-bottom: 2rem;
       margin-right: 2rem; }
+      .restaurants__specification__avis:visited, .restaurants__specification__avis:link, .restaurants__specification__avis:active {
+        text-decoration: none; }
       .restaurants__specification__avis--nolike {
         color: black; }
       .restaurants__specification__avis--like {
-        color: red; }
+        background: -webkit-linear-gradient(#a45cdc, #e471da);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+  .restaurants * > .fa-hover-show,
+  .restaurants *:hover > .fa-hover-hidden {
+    display: none; }
+  .restaurants *:hover > .fa-hover-show {
+    display: inline-block; }
+
+.fonctionnement__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32.2rem;
+  height: 7.3rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #f6f6f6;
+  box-shadow: 0.7rem 0.7rem 0.7rem #ededed;
+  border: none;
+  margin-bottom: 2rem; }
+  .fonctionnement__btn__num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    left: -0.6rem;
+    border-radius: 2rem;
+    background-color: #9356dc;
+    color: white;
+    font-style: normal;
+    font-weight: normal; }
+  .fonctionnement__btn__logo {
+    color: #7e7e7e; }
+  .fonctionnement__btn__txt {
+    display: inline-block;
+    width: 25.5rem; }
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  width: 37.5rem; }
+  .introduction__title {
+    font-family: "Roboto";
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -1.6rem;
+    margin-top: 3.9rem;
+    display: inline-block;
+    width: 28rem; }
+  .introduction__paragraph {
+    font-family: "Roboto";
+    font-size: 2.4rem; }

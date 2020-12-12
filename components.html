@@ -11,6 +11,7 @@
 
 <body>
 
+
     <article class="restaurants">
         <div class="restaurants__vignette">
             <img class="restaurants__vignette__photo" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
@@ -22,10 +23,20 @@
                 <p class="restaurants__specification__txt__plat">La palette du goût</p>
                 <p class="restaurants__specification__txt__etablissement">Ménilmontant</p>
             </div>
-            <i class="restaurants__specification__avis restaurants__specification__avis--nolike far fa-heart"></i>
-            <!-- <i class="restaurants__specification__avis restaurants__specification__avis--like fas fa-heart"></i> -->
+            <a class="restaurants__specification__avis" href="#">
+                <i class=" restaurants__specification__avis--nolike far fa-heart fa-hover-hidden"></i>
+                <i class=" restaurants__specification__avis--like fas fa-heart fa-hover-show"></i>
+            </a>
         </div>
     </article>
+
+
+
+    <button class="fonctionnement__btn">
+        <i class="fonctionnement__btn__num">1</i>
+        <i class="fonctionnement__btn__logo fas fa-mobile-alt"></i>
+        <p class="fonctionnement__btn__txt">Choisissez un restaurant</p>
+    </button>
 
 </body>
 
