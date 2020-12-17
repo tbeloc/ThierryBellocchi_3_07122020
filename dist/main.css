@@ -2,26 +2,6 @@
   font-family: "Shrikhand";
   src: url("../font/Shrikhand-Regular.ttf") format("truetype"); }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/Roboto-Light.ttf") format("truetype");
-  font-weight: lighter; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/Roboto-Medium.ttf") format("truetype");
-  font-weight: 500; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/Roboto-Bold.ttf") format("truetype");
-  font-weight: bold; }
-
 html {
   font-size: 62.5%;
   font-family: "Roboto";
@@ -157,37 +137,65 @@ p {
   .restaurants *:hover > .fa-hover-show {
     display: inline-block; }
 
-.fonctionnement__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 32.2rem;
-  height: 7.3rem;
-  border-radius: 2rem;
-  font-size: 1.6rem;
-  font-weight: bold;
-  background-color: #f6f6f6;
-  box-shadow: 0.7rem 0.7rem 0.7rem #ededed;
-  border: none;
-  margin-bottom: 2rem; }
-  .fonctionnement__btn__num {
+.fonctionnement {
+  margin-top: 4.7rem; }
+  .fonctionnement__title {
+    font-size: 2.4rem;
+    margin-left: 2rem; }
+  .fonctionnement__btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    position: absolute;
-    left: -0.6rem;
+    width: 32.2rem;
+    height: 7.3rem;
     border-radius: 2rem;
-    background-color: #9356dc;
-    color: white;
-    font-style: normal;
-    font-weight: normal; }
-  .fonctionnement__btn__logo {
-    color: #7e7e7e; }
-  .fonctionnement__btn__txt {
-    display: inline-block;
-    width: 25.5rem; }
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: #f6f6f6;
+    box-shadow: 0.7rem 0.7rem 0.7rem #ededed;
+    border: none;
+    margin-bottom: 2rem;
+    margin-left: 3.3rem;
+    margin-top: 3rem; }
+    .fonctionnement__btn__num {
+      font-size: 1.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2.4rem;
+      height: 2.4rem;
+      position: absolute;
+      left: 2rem;
+      margin-top: 0.4rem;
+      border-radius: 2rem;
+      background-color: #9356dc;
+      color: white;
+      font-style: normal;
+      font-weight: 400;
+      font-family: "Roboto"; }
+    .fonctionnement__btn__num2 {
+      margin-bottom: 0.9rem; }
+    .fonctionnement__btn__logo {
+      color: #7e7e7e;
+      font-size: 2rem; }
+    .fonctionnement__btn__logo2 {
+      font-size: 1.7rem;
+      margin-bottom: 0.8rem;
+      margin-left: 0.5rem; }
+    .fonctionnement__btn__txt {
+      display: flex;
+      width: 23.3rem;
+      font-family: "Roboto";
+      font-weight: 500;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+      margin-top: 0.3rem; }
+    .fonctionnement__btn__txt2 {
+      align-items: flex-end;
+      width: 26.3rem;
+      margin-left: -2.7rem;
+      margin-bottom: 1.1rem; }
 
 .introduction {
   display: flex;
@@ -204,7 +212,29 @@ p {
     margin-left: -1.6rem;
     margin-top: 3.9rem;
     display: inline-block;
-    width: 28rem; }
+    width: 28rem;
+    margin-bottom: 0; }
   .introduction__paragraph {
     font-family: "Roboto";
-    font-size: 2.4rem; }
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-left: 0.9rem;
+    width: 36rem; }
+  .introduction__btn {
+    height: 5rem;
+    width: 21.8rem;
+    color: white;
+    border-radius: 3rem;
+    border-style: none;
+    margin-top: 3.1rem;
+    margin-left: 0.6rem;
+    background: linear-gradient(166deg, #d66bdb 0%, #e46fda 22%, #d96cdb 43%, #a85cdb 82%);
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "ROBOTO";
+    padding-bottom: 0.3rem;
+    padding-left: 0.8rem;
+    box-shadow: 0.7rem 0.7rem 0.7rem #c8c8c8;
+    margin-bottom: 5.7rem; }
