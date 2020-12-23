@@ -1,3 +1,46 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.homefooter {
+  align-self: flex-start;
+  background-color: #353535;
+  width: 37.5rem;
+  height: 20rem;
+  color: #ffffff;
+  &__title {
+    font-family: "Shrikhand";
+    margin-top: 2.4rem;
+    margin-left: 2.4rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  &__menu {
+    margin-left: 2.5rem;
+    &__listewithicone {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 0.7rem;
+      &_logo1 {
+        font-size: 1.3rem;
+      }
+      &_logo2 {
+        font-size: 0.9rem;
+      }
+      &__title1 {
+        font-size: 1.6rem;
+        margin-left: 1.2rem;
+        margin-top: 0.1rem;
+      }
+      &__title2 {
+        font-size: 1.6rem;
+        margin-left: 1.1rem;
+        margin-top: 0.1rem;
+      }
+    }
+    &__title {
+      font-size: 1.6rem;
+      margin-top: 0.9rem;
+    }
+  }
+}

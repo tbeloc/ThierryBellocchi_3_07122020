@@ -1,37 +1,414 @@
-@font-face {
-  font-family: "Shrikhand";
-  src: url("../font/Shrikhand-Regular.ttf") format("truetype"); }
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
 
 html {
-  font-size: 62.5%;
   font-family: "Roboto";
-  background-color: white; }
+  font-size: 62.5%;
+  background-color: white;
+  box-sizing: border-box; }
 
 p {
   margin: 0; }
 
-.home {
-  width: 37.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
 
-.headerMobile {
+a {
+  color: #e50050;
+  text-decoration: none; }
+  a:hover, a:active, a:focus {
+    color: #222222;
+    text-decoration: underline; }
+
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../font/Shrikhand-Regular.ttf") format("truetype"); }
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: #222222; }
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+/**
+ * Main content containers
+ * 1. Make the container full-width with a maximum width
+ * 2. Center it in the viewport
+ * 3. Leave some space on the edges, especially valuable on small screens
+ */
+.container {
+  max-width: 1180px;
+  /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  padding-left: 20px;
+  /* 3 */
+  padding-right: 20px;
+  /* 3 */
+  width: 100%;
+  /* 1 */ }
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  /* 1 */
+  text-indent: 101%;
+  white-space: nowrap; }
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.homeheader {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .headerMobile__logo {
+  .homeheader__logo {
     height: 7.3rem;
     justify-content: center;
     display: flex;
     align-items: center;
     margin-bottom: -1rem; }
-    .headerMobile__logo__svg {
+    .homeheader__logo__svg {
       width: 16.5rem; }
-  .headerMobile__location {
+  .homeheader__location {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,16 +416,16 @@ p {
     height: 5rem;
     background: #cecece;
     background: linear-gradient(180deg, #cecece 0%, #d5d5d5 1%, #dddddd 2%, #e3e3e3 3%, #e8e8e8 4%, #eaeaea 100%); }
-    .headerMobile__location__mylocation {
+    .homeheader__location__mylocation {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       width: 16.5rem; }
-      .headerMobile__location__mylocation__picto {
+      .homeheader__location__mylocation__picto {
         font-size: 1.6rem;
         margin-bottom: 0.3rem;
         padding-right: 1.6rem; }
-      .headerMobile__location__mylocation__input {
+      .homeheader__location__mylocation__input {
         color: black;
         background-color: #eaeaea;
         border-style: none;
@@ -60,27 +437,353 @@ p {
         font-weight: 500;
         margin-right: 2.8rem; }
 
+.homefooter {
+  align-self: flex-start;
+  background-color: #353535;
+  width: 37.5rem;
+  height: 20rem;
+  color: #ffffff; }
+  .homefooter__title {
+    font-family: "Shrikhand";
+    margin-top: 2.4rem;
+    margin-left: 2.4rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem; }
+  .homefooter__menu {
+    margin-left: 2.5rem; }
+    .homefooter__menu__listewithicone {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 0.7rem; }
+      .homefooter__menu__listewithicone_logo1 {
+        font-size: 1.3rem; }
+      .homefooter__menu__listewithicone_logo2 {
+        font-size: 0.9rem; }
+      .homefooter__menu__listewithicone__title1 {
+        font-size: 1.6rem;
+        margin-left: 1.2rem;
+        margin-top: 0.1rem; }
+      .homefooter__menu__listewithicone__title2 {
+        font-size: 1.6rem;
+        margin-left: 1.1rem;
+        margin-top: 0.1rem; }
+    .homefooter__menu__title {
+      font-size: 1.6rem;
+      margin-top: 0.9rem; }
+
+.homemain {
+  margin-bottom: 4.9rem; }
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  width: 37.5rem; }
+  .introduction__title {
+    font-family: "Roboto";
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -1.6rem;
+    margin-top: 4rem;
+    display: inline-block;
+    width: 28rem;
+    margin-bottom: 0; }
+  .introduction__paragraph {
+    font-family: "Roboto";
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1.4rem;
+    margin-left: 0.8rem;
+    width: 36rem;
+    line-height: 2rem; }
+  .introduction__btn {
+    height: 5rem;
+    width: 21.8rem;
+    color: white;
+    border-radius: 3rem;
+    border-style: none;
+    margin-top: 3.3rem;
+    margin-left: 0.6rem;
+    background: linear-gradient(166deg, #d66bdb 0%, #e46fda 22%, #d96cdb 43%, #a85cdb 82%);
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "ROBOTO";
+    padding-bottom: 0.3rem;
+    padding-left: 0.8rem;
+    box-shadow: 0.7rem 0.7rem 0.7rem #c8c8c8;
+    margin-bottom: 5.7rem; }
+
+.fonctionnement {
+  margin-top: 4.7rem; }
+  .fonctionnement__title {
+    font-size: 2.4rem;
+    margin-left: 2rem; }
+
 .restaurants {
+  background-color: #f6f6f6;
+  margin-top: 6.7rem;
+  margin-bottom: 1rem;
+  padding-top: 3.5rem; }
+  .restaurants__title {
+    font-size: 2.4rem;
+    margin-left: 2rem; }
+
+.choisissez__btn, .composez__btn, .degustez__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32.2rem;
+  height: 7.3rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #f6f6f6;
+  box-shadow: 0.7rem 0.7rem 0.7rem #ededed;
+  border: none; }
+
+.choisissez__btn {
+  margin-bottom: 2rem;
+  margin-left: 3.3rem;
+  margin-top: 3rem; }
+  .choisissez__btn__num {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    left: 2rem;
+    margin-top: 0.4rem;
+    border-radius: 2rem;
+    background-color: #9356dc;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Roboto"; }
+  .choisissez__btn__logo {
+    color: #7e7e7e;
+    font-size: 2rem; }
+  .choisissez__btn__txt {
+    display: flex;
+    width: 23.3rem;
+    font-family: "Roboto";
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    margin-top: 0.3rem; }
+
+.composez__btn {
+  margin-bottom: 2rem;
+  margin-left: 3.3rem;
+  margin-top: 2.3rem; }
+  .composez__btn__num {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    left: 2rem;
+    margin-top: 0.7rem;
+    border-radius: 2rem;
+    background-color: #9356dc;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Roboto"; }
+  .composez__btn__logo {
+    color: #7e7e7e;
+    font-size: 2rem;
+    margin-top: 0.8rem; }
+  .composez__btn__txt {
+    display: flex;
+    width: 20.3rem;
+    font-family: "Roboto";
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3.4rem;
+    margin-top: 0.9rem; }
+
+.degustez__btn {
+  margin-bottom: 2rem;
+  margin-left: 3.3rem;
+  margin-top: 2.6rem; }
+  .degustez__btn__num {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    left: 2rem;
+    margin-top: 0.3rem;
+    border-radius: 2rem;
+    background-color: #9356dc;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Roboto"; }
+  .degustez__btn__logo {
+    color: #7e7e7e;
+    font-size: 1.6rem;
+    height: 1rem;
+    margin-bottom: 0.2rem; }
+  .degustez__btn__txt {
+    display: flex;
+    width: 20.3rem;
+    font-family: "Roboto";
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+    margin-top: 0.3rem; }
+
+.choisissez__btn, .composez__btn, .degustez__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32.2rem;
+  height: 7.3rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #f6f6f6;
+  box-shadow: 0.7rem 0.7rem 0.7rem #ededed;
+  border: none; }
+
+.choisissez__btn {
+  margin-bottom: 2rem;
+  margin-left: 3.3rem;
+  margin-top: 3rem; }
+  .choisissez__btn__num {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    left: 2rem;
+    margin-top: 0.4rem;
+    border-radius: 2rem;
+    background-color: #9356dc;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Roboto"; }
+  .choisissez__btn__logo {
+    color: #7e7e7e;
+    font-size: 2rem; }
+  .choisissez__btn__txt {
+    display: flex;
+    width: 23.3rem;
+    font-family: "Roboto";
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    margin-top: 0.3rem; }
+
+.composez__btn {
+  margin-bottom: 2rem;
+  margin-left: 3.3rem;
+  margin-top: 2.3rem; }
+  .composez__btn__num {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    left: 2rem;
+    margin-top: 0.7rem;
+    border-radius: 2rem;
+    background-color: #9356dc;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Roboto"; }
+  .composez__btn__logo {
+    color: #7e7e7e;
+    font-size: 2rem;
+    margin-top: 0.8rem; }
+  .composez__btn__txt {
+    display: flex;
+    width: 20.3rem;
+    font-family: "Roboto";
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3.4rem;
+    margin-top: 0.9rem; }
+
+.degustez__btn {
+  margin-bottom: 2rem;
+  margin-left: 3.3rem;
+  margin-top: 2.6rem; }
+  .degustez__btn__num {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    left: 2rem;
+    margin-top: 0.3rem;
+    border-radius: 2rem;
+    background-color: #9356dc;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Roboto"; }
+  .degustez__btn__logo {
+    color: #7e7e7e;
+    font-size: 1.6rem;
+    height: 1rem;
+    margin-bottom: 0.2rem; }
+  .degustez__btn__txt {
+    display: flex;
+    width: 20.3rem;
+    font-family: "Roboto";
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+    margin-top: 0.3rem; }
+
+.restaurants__1 {
   width: 33.5rem;
   height: 25.1rem;
   border-radius: 1rem;
   background-color: white;
   font-size: 1.6rem;
   box-shadow: 0.7rem 0.7rem 0.7rem #ededed;
-  margin-bottom: 1.8rem; }
-  .restaurants__vignette {
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;
+  margin-left: 2rem; }
+  .restaurants__1__vignette {
     position: relative;
     overflow: hidden; }
-    .restaurants__vignette__photo {
+    .restaurants__1__vignette__photo {
       display: block;
       width: 33.5rem;
-      height: 17.4rem;
+      height: 18rem;
       object-fit: cover;
-      object-position: 50% 108%;
+      object-position: 50% 109%;
       border-radius: 1rem 1rem 0 0; }
-    .restaurants__vignette__photo-lapalette {
-      object-position: 50% 61%; }
-  .restaurants_state {
+  .restaurants__1__state {
     width: 8rem;
     height: 2.9rem;
     position: absolute;
@@ -99,142 +802,311 @@ p {
     font-size: 1.33rem;
     justify-content: center;
     align-items: center; }
-    .restaurants_state--new {
-      display: flex; }
-    .restaurants_state--old {
+    .restaurants__1__state--new {
+      display: flex;
+      margin-top: 0.3rem;
+      margin-left: 0.2rem;
+      font-weight: bold;
+      font-size: 1.4rem; }
+    .restaurants__1__state--old {
       display: none; }
-  .restaurants__specification {
+  .restaurants__1__specification {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 7.7rem; }
-    .restaurants__specification__txt {
+    .restaurants__1__specification__txt {
       align-self: center;
-      margin-left: 1.4rem; }
-      .restaurants__specification__txt__plat {
+      margin-left: 1.3rem;
+      width: 26rem;
+      font-size: 1.8rem;
+      margin-bottom: 0.7rem; }
+      .restaurants__1__specification__txt__plat {
         font-weight: bold;
         margin-bottom: 0.5rem; }
-      .restaurants__specification__txt__etablissement {
-        font-weight: normal; }
-    .restaurants__specification__avis {
+      .restaurants__1__specification__txt__etablissement {
+        font-size: 1.7rem;
+        font-weight: 300; }
+    .restaurants__1__specification__avis {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      margin-right: 2rem; }
-      .restaurants__specification__avis:visited, .restaurants__specification__avis:link, .restaurants__specification__avis:active {
+      font-size: 2.4rem;
+      margin-bottom: 1.8rem;
+      margin-right: 2.3rem; }
+      .restaurants__1__specification__avis:visited, .restaurants__1__specification__avis:link, .restaurants__1__specification__avis:active {
         text-decoration: none; }
-      .restaurants__specification__avis--nolike {
+      .restaurants__1__specification__avis--nolike {
         color: black; }
-      .restaurants__specification__avis--like {
+      .restaurants__1__specification__avis--like {
         background: -webkit-linear-gradient(#a45cdc, #e471da);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
-  .restaurants * > .fa-hover-show,
-  .restaurants *:hover > .fa-hover-hidden {
+  .restaurants__1 * > .fa-hover-show,
+  .restaurants__1 *:hover > .fa-hover-hidden {
     display: none; }
-  .restaurants *:hover > .fa-hover-show {
+  .restaurants__1 *:hover > .fa-hover-show {
     display: inline-block; }
 
-.fonctionnement {
-  margin-top: 4.7rem; }
-  .fonctionnement__title {
-    font-size: 2.4rem;
-    margin-left: 2rem; }
-  .fonctionnement__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32.2rem;
-    height: 7.3rem;
-    border-radius: 2rem;
-    font-size: 1.6rem;
+.restaurants__2 {
+  width: 33.5rem;
+  height: 25.1rem;
+  border-radius: 1rem;
+  background-color: white;
+  font-size: 1.6rem;
+  box-shadow: 0.7rem 0.7rem 0.7rem #ededed;
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;
+  margin-left: 2rem; }
+  .restaurants__2__vignette {
+    position: relative;
+    overflow: hidden; }
+    .restaurants__2__vignette__photo {
+      display: block;
+      width: 33.5rem;
+      height: 17.4rem;
+      object-fit: cover;
+      object-position: 50% 61%;
+      border-radius: 1rem 1rem 0 0; }
+  .restaurants__2__state {
+    width: 8rem;
+    height: 2.9rem;
+    position: absolute;
+    top: 1.3rem;
+    left: 24.1rem;
+    background-color: #99e2d0;
+    color: #008766;
+    border-left: 0.1rem solid rgba(153, 226, 208, 0.5);
+    border-right: 0.1rem solid rgba(153, 226, 208, 0.5);
+    border-radius: 0.2rem;
+    border-top: none;
+    border-bottom: none;
+    background-clip: padding-box;
     font-weight: bold;
-    background-color: #f6f6f6;
-    box-shadow: 0.7rem 0.7rem 0.7rem #ededed;
-    border: none;
-    margin-bottom: 2rem;
-    margin-left: 3.3rem;
-    margin-top: 3rem; }
-    .fonctionnement__btn__num {
-      font-size: 1.4rem;
+    font-family: "Roboto";
+    font-size: 1.33rem;
+    justify-content: center;
+    align-items: center; }
+    .restaurants__2__state--new {
+      display: flex;
+      margin-top: 0.3rem;
+      margin-left: 0.2rem;
+      font-weight: bold;
+      font-size: 1.4rem; }
+    .restaurants__2__state--old {
+      display: none; }
+  .restaurants__2__specification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.7rem; }
+    .restaurants__2__specification__txt {
+      align-self: center;
+      margin-left: 1.3rem;
+      width: 26rem;
+      height: 3.9rem;
+      font-size: 1.8rem; }
+      .restaurants__2__specification__txt__plat {
+        font-weight: bold;
+        height: 2.5rem; }
+      .restaurants__2__specification__txt__etablissement {
+        font-size: 1.7rem;
+        font-weight: 300; }
+    .restaurants__2__specification__avis {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 2.4rem;
-      height: 2.4rem;
-      position: absolute;
-      left: 2rem;
-      margin-top: 0.4rem;
-      border-radius: 2rem;
-      background-color: #9356dc;
-      color: white;
-      font-style: normal;
-      font-weight: 400;
-      font-family: "Roboto"; }
-    .fonctionnement__btn__num2 {
-      margin-bottom: 0.9rem; }
-    .fonctionnement__btn__logo {
-      color: #7e7e7e;
-      font-size: 2rem; }
-    .fonctionnement__btn__logo2 {
-      font-size: 1.7rem;
+      font-size: 2.4rem;
       margin-bottom: 0.8rem;
-      margin-left: 0.5rem; }
-    .fonctionnement__btn__txt {
+      margin-right: 2.3rem; }
+      .restaurants__2__specification__avis:visited, .restaurants__2__specification__avis:link, .restaurants__2__specification__avis:active {
+        text-decoration: none; }
+      .restaurants__2__specification__avis--nolike {
+        color: black; }
+      .restaurants__2__specification__avis--like {
+        background: -webkit-linear-gradient(#a45cdc, #e471da);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+  .restaurants__2 * > .fa-hover-show,
+  .restaurants__2 *:hover > .fa-hover-hidden {
+    display: none; }
+  .restaurants__2 *:hover > .fa-hover-show {
+    display: inline-block; }
+
+.restaurants__3 {
+  width: 33.5rem;
+  height: 25.1rem;
+  border-radius: 1rem;
+  background-color: white;
+  font-size: 1.6rem;
+  box-shadow: 0.7rem 0.7rem 0.7rem #ededed;
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;
+  margin-left: 2rem; }
+  .restaurants__3__vignette {
+    position: relative;
+    overflow: hidden; }
+    .restaurants__3__vignette__photo {
+      display: block;
+      width: 33.5rem;
+      height: 17.4rem;
+      object-fit: cover;
+      object-position: 50% 99%;
+      border-radius: 1rem 1rem 0 0; }
+  .restaurants__3__state {
+    width: 8rem;
+    height: 2.9rem;
+    position: absolute;
+    top: 1.3rem;
+    left: 24.1rem;
+    background-color: #99e2d0;
+    color: #008766;
+    border-left: 0.1rem solid rgba(153, 226, 208, 0.5);
+    border-right: 0.1rem solid rgba(153, 226, 208, 0.5);
+    border-radius: 0.2rem;
+    border-top: none;
+    border-bottom: none;
+    background-clip: padding-box;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 1.33rem;
+    justify-content: center;
+    align-items: center; }
+    .restaurants__3__state--new {
       display: flex;
-      width: 23.3rem;
-      font-family: "Roboto";
-      font-weight: 500;
+      margin-top: 0.3rem;
+      margin-left: 0.2rem;
+      font-weight: bold;
+      font-size: 1.4rem; }
+    .restaurants__3__state--old {
+      display: none; }
+  .restaurants__3__specification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.7rem; }
+    .restaurants__3__specification__txt {
+      align-self: center;
+      margin-left: 1.3rem;
+      width: 26rem;
+      height: 3.9rem;
+      font-size: 1.8rem; }
+      .restaurants__3__specification__txt__plat {
+        font-weight: bold;
+        height: 2.5rem; }
+      .restaurants__3__specification__txt__etablissement {
+        font-size: 1.7rem;
+        font-weight: 300; }
+    .restaurants__3__specification__avis {
+      display: flex;
       justify-content: center;
       align-items: center;
-      margin-right: 1rem;
-      margin-top: 0.3rem; }
-    .fonctionnement__btn__txt2 {
-      align-items: flex-end;
-      width: 26.3rem;
-      margin-left: -2.7rem;
-      margin-bottom: 1.1rem; }
+      font-size: 2.4rem;
+      margin-bottom: 0.8rem;
+      margin-right: 2.3rem; }
+      .restaurants__3__specification__avis:visited, .restaurants__3__specification__avis:link, .restaurants__3__specification__avis:active {
+        text-decoration: none; }
+      .restaurants__3__specification__avis--nolike {
+        color: black; }
+      .restaurants__3__specification__avis--like {
+        background: -webkit-linear-gradient(#a45cdc, #e471da);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+  .restaurants__3 * > .fa-hover-show,
+  .restaurants__3 *:hover > .fa-hover-hidden {
+    display: none; }
+  .restaurants__3 *:hover > .fa-hover-show {
+    display: inline-block; }
 
-.introduction {
+.restaurants__4 {
+  width: 33.5rem;
+  height: 25.1rem;
+  border-radius: 1rem;
+  background-color: white;
+  font-size: 1.6rem;
+  box-shadow: 0.7rem 0.7rem 0.7rem #ededed;
+  margin-top: 1rem;
+  margin-bottom: 1.8rem;
+  margin-left: 2rem; }
+  .restaurants__4__vignette {
+    position: relative;
+    overflow: hidden; }
+    .restaurants__4__vignette__photo {
+      display: block;
+      width: 33.5rem;
+      height: 17.4rem;
+      object-fit: cover;
+      object-position: 50% 95%;
+      border-radius: 1rem 1rem 0 0; }
+  .restaurants__4__state {
+    width: 8rem;
+    height: 2.9rem;
+    position: absolute;
+    top: 1.3rem;
+    left: 24.1rem;
+    background-color: #99e2d0;
+    color: #008766;
+    border-left: 0.1rem solid rgba(153, 226, 208, 0.5);
+    border-right: 0.1rem solid rgba(153, 226, 208, 0.5);
+    border-radius: 0.2rem;
+    border-top: none;
+    border-bottom: none;
+    background-clip: padding-box;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 1.33rem;
+    justify-content: center;
+    align-items: center; }
+    .restaurants__4__state--new {
+      display: flex;
+      margin-top: 0.3rem;
+      margin-left: 0.2rem;
+      font-weight: bold;
+      font-size: 1.4rem; }
+    .restaurants__4__state--old {
+      display: none; }
+  .restaurants__4__specification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.7rem; }
+    .restaurants__4__specification__txt {
+      align-self: center;
+      margin-left: 1.3rem;
+      width: 26rem;
+      height: 3.9rem;
+      font-size: 1.8rem; }
+      .restaurants__4__specification__txt__plat {
+        font-weight: bold;
+        height: 2.5rem; }
+      .restaurants__4__specification__txt__etablissement {
+        font-size: 1.7rem;
+        font-weight: 300; }
+    .restaurants__4__specification__avis {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.4rem;
+      margin-bottom: 0.8rem;
+      margin-right: 2.3rem; }
+      .restaurants__4__specification__avis:visited, .restaurants__4__specification__avis:link, .restaurants__4__specification__avis:active {
+        text-decoration: none; }
+      .restaurants__4__specification__avis--nolike {
+        color: black; }
+      .restaurants__4__specification__avis--like {
+        background: -webkit-linear-gradient(#a45cdc, #e471da);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+  .restaurants__4 * > .fa-hover-show,
+  .restaurants__4 *:hover > .fa-hover-hidden {
+    display: none; }
+  .restaurants__4 *:hover > .fa-hover-show {
+    display: inline-block; }
+
+.home {
+  width: 37.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f6f6f6;
-  width: 37.5rem; }
-  .introduction__title {
-    font-family: "Roboto";
-    font-size: 2.4rem;
-    font-weight: bold;
-    text-align: center;
-    margin-left: -1.6rem;
-    margin-top: 3.9rem;
-    display: inline-block;
-    width: 28rem;
-    margin-bottom: 0; }
-  .introduction__paragraph {
-    font-family: "Roboto";
-    font-size: 1.8rem;
-    font-weight: 300;
-    text-align: center;
-    margin-top: 1.2rem;
-    margin-left: 0.9rem;
-    width: 36rem; }
-  .introduction__btn {
-    height: 5rem;
-    width: 21.8rem;
-    color: white;
-    border-radius: 3rem;
-    border-style: none;
-    margin-top: 3.1rem;
-    margin-left: 0.6rem;
-    background: linear-gradient(166deg, #d66bdb 0%, #e46fda 22%, #d96cdb 43%, #a85cdb 82%);
-    font-size: 1.6rem;
-    font-weight: 500;
-    font-family: "ROBOTO";
-    padding-bottom: 0.3rem;
-    padding-left: 0.8rem;
-    box-shadow: 0.7rem 0.7rem 0.7rem #c8c8c8;
-    margin-bottom: 5.7rem; }
+  margin: 0; }

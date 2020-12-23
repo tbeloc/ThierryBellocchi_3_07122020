@@ -1,0 +1,75 @@
+.homemain {
+  margin-bottom: 4.9rem;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  width: 37.5rem;
+  &__title {
+    font-family: $font_txt;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -1.6rem;
+    margin-top: 4rem;
+    display: inline-block;
+    width: 28rem;
+    margin-bottom: 0;
+  }
+  &__paragraph {
+    font-family: $font_txt;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1.4rem;
+    margin-left: 0.8rem;
+    width: 36rem;
+    line-height: 2rem;
+  }
+  &__btn {
+    height: 5rem;
+    width: 21.8rem;
+    color: white;
+    border-radius: 3rem;
+    border-style: none;
+    margin-top: 3.3rem;
+    margin-left: 0.6rem;
+    background: linear-gradient(
+      166deg,
+      rgba(214, 107, 219, 1) 0%,
+      rgba(228, 111, 218, 1) 22%,
+      rgba(217, 108, 219, 1) 43%,
+      rgba(168, 92, 219, 1) 82%
+    );
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "ROBOTO";
+    padding-bottom: 0.3rem;
+    padding-left: 0.8rem;
+    box-shadow: 0.7rem 0.7rem 0.7rem #c8c8c8;
+    margin-bottom: 5.7rem;
+  }
+}
+
+.fonctionnement {
+  margin-top: 4.7rem;
+  &__title {
+    font-size: 2.4rem;
+    margin-left: 2rem;
+  }
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  margin-top: 6.7rem;
+  margin-bottom: 1rem;
+  padding-top: 3.5rem;
+  &__title {
+    font-size: 2.4rem;
+    margin-left: 2rem;
+  }
+}
