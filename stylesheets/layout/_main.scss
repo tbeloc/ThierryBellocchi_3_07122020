@@ -1,5 +1,4 @@
 .homemain {
-  margin-bottom: 4.9rem;
 }
 
 .introduction {
@@ -52,6 +51,18 @@
     padding-left: 0.8rem;
     box-shadow: 0.7rem 0.7rem 0.7rem #c8c8c8;
     margin-bottom: 5.7rem;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  &__btn:hover {
+    background: linear-gradient(
+      306deg,
+      rgba(214, 107, 219, 1) 0%,
+      rgba(228, 111, 218, 1) 22%,
+      rgba(217, 108, 219, 1) 43%,
+      rgba(168, 92, 219, 1) 82%
+    );
+    cursor: pointer;
   }
 }
 
@@ -66,8 +77,8 @@
 .restaurants {
   background-color: #f6f6f6;
   margin-top: 6.7rem;
-  margin-bottom: 1rem;
   padding-top: 3.5rem;
+  height: 122.6rem;
   &__title {
     font-size: 2.4rem;
     margin-left: 2rem;

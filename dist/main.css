@@ -318,11 +318,14 @@ p {
   box-sizing: inherit; }
 
 a {
-  color: #e50050;
+  color: black;
   text-decoration: none; }
   a:hover, a:active, a:focus {
     color: #222222;
     text-decoration: underline; }
+
+a:hover {
+  text-decoration: none; }
 
 ol,
 li {
@@ -445,7 +448,7 @@ body {
   color: #ffffff; }
   .homefooter__title {
     font-family: "Shrikhand";
-    margin-top: 2.4rem;
+    margin-top: 2.5rem;
     margin-left: 2.4rem;
     font-size: 1.8rem;
     margin-bottom: 2rem; }
@@ -471,9 +474,6 @@ body {
     .homefooter__menu__title {
       font-size: 1.6rem;
       margin-top: 0.9rem; }
-
-.homemain {
-  margin-bottom: 4.9rem; }
 
 .introduction {
   display: flex;
@@ -516,7 +516,12 @@ body {
     padding-bottom: 0.3rem;
     padding-left: 0.8rem;
     box-shadow: 0.7rem 0.7rem 0.7rem #c8c8c8;
-    margin-bottom: 5.7rem; }
+    margin-bottom: 5.7rem;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+  .introduction__btn:hover {
+    background: linear-gradient(306deg, #d66bdb 0%, #e46fda 22%, #d96cdb 43%, #a85cdb 82%);
+    cursor: pointer; }
 
 .fonctionnement {
   margin-top: 4.7rem; }
@@ -527,8 +532,8 @@ body {
 .restaurants {
   background-color: #f6f6f6;
   margin-top: 6.7rem;
-  margin-bottom: 1rem;
-  padding-top: 3.5rem; }
+  padding-top: 3.5rem;
+  height: 122.6rem; }
   .restaurants__title {
     font-size: 2.4rem;
     margin-left: 2rem; }
@@ -544,7 +549,15 @@ body {
   font-weight: bold;
   background-color: #f6f6f6;
   box-shadow: 0.7rem 0.7rem 0.7rem #ededed;
-  border: none; }
+  border: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+
+.choisissez__btn:hover,
+.composez__btn:hover,
+.degustez__btn:hover {
+  background-color: #f5edff;
+  cursor: pointer; }
 
 .choisissez__btn {
   margin-bottom: 2rem;
@@ -659,7 +672,15 @@ body {
   font-weight: bold;
   background-color: #f6f6f6;
   box-shadow: 0.7rem 0.7rem 0.7rem #ededed;
-  border: none; }
+  border: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+
+.choisissez__btn:hover,
+.composez__btn:hover,
+.degustez__btn:hover {
+  background-color: #f5edff;
+  cursor: pointer; }
 
 .choisissez__btn {
   margin-bottom: 2rem;
@@ -762,6 +783,20 @@ body {
     align-items: center;
     margin-right: 3rem;
     margin-top: 0.3rem; }
+
+.restaurants__1:hover,
+.restaurants__2:hover,
+.restaurants__3:hover,
+.restaurants__4:hover {
+  opacity: 1; }
+
+.restaurants__1,
+.restaurants__2,
+.restaurants__3,
+.restaurants__4 {
+  opacity: 0.7;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
 
 .restaurants__1 {
   width: 33.5rem;
