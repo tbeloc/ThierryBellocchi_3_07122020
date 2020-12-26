@@ -19,20 +19,38 @@
 
 <body class="home">
 
-  <header class="homeheader">
+  <div class="container__circle">
+    <div class="circle"></div>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="circle-3"></div>
+    <div class="circle-4"></div>
+    <div class="circle-5"></div>
+    <div class="circle-6"></div>
+    <div class="circle-7"></div>
+    <div class="circle-8"></div>
+    <div class="circle-9"></div>
+    <div class="circle-10"></div>
+    <div class="circle-11"></div>
+    <div class="circle-12"></div>
+    <div class="circle-13"></div>
+  </div>
+
+  <header class="homeheader container__after-loading">
     <picture class="homeheader__logo"><img class="homeheader__logo__svg" src="./images/logo/ohmyfood@2x.svg"
         alt="logo" /></picture>
     <div class="homeheader__location">
       <address class="homeheader__location__mylocation">
-        <i class="homeheader__location__mylocation__picto fas fa-map-marker-alt"></i><input
-          class="homeheader__location__mylocation__input" type="text" value="Paris, Belleville" disabled />
+        <i class="homeheader__location__mylocation__picto fas fa-map-marker-alt"></i>
+        <input class="homeheader__location__mylocation__input" type="text" value="Paris, Belleville" disabled />
       </address>
     </div>
 
   </header>
 
-  <main class="homemain">
+  <main class="homemain container__after-loading">
     <section class="introduction">
+      <!-- H1 -->
       <h2 class="introduction__title">Réservez le menu qui vous convient</h2>
       <p class="introduction__paragraph">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
       <button class="introduction__btn">Explorer nos restaurants</button>
@@ -136,9 +154,9 @@
     </section>
   </main>
 
-  <footer class="homefooter">
+  <footer class="homefooter container__after-loading">
     <p class="homefooter__title">ohmyfood</p>
-    <ol class="homefooter__menu">
+    <ul class="homefooter__menu">
       <div class="homefooter__menu__listewithicone">
         <i class="homefooter__menu__listewithicone_logo1 fas fa-utensils"></i>
         <li class="homefooter__menu__listewithicone__title1">Proposer un restaurant</li>
@@ -149,7 +167,7 @@
       </div>
       <li class="homefooter__menu__title">Mentions légales</li>
       <li class="homefooter__menu__title">Contact</li>
-    </ol>
+    </ul>
   </footer>
 
 </body>
