@@ -7,13 +7,14 @@
 @import "vendors/normalize";
 
 // 3. Style de base
-@import "base/base", "base/fonts", "base/typography", "base/helpers";
+@import "base/base", "base/fonts", "base/typography", "base/helpers",
+  "base/animation";
 
 // 4. Contiens les blocs BEM pour les parties principales
 @import "layout/header", "layout/footer", "layout/main";
 
 // 5. Contiens les blocs BEM qui sont plus indépendants
-@import "components/button", "components/restaurants", "components/animation";
+@import "components/button", "components/restaurants";
 
 // 6. Contiens les blocs BEM qui ne s’appliquent qu’à une seule page
 @import "pages/home";
