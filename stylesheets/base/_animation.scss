@@ -1,5 +1,5 @@
 /* Animation */
-@keyframes loading-spinner {
+@keyframes anim-loading-spinner {
   from {
     transform: rotate(0deg) translateX(7rem) rotate(0deg);
     background-color: #ff79da;
@@ -13,7 +13,7 @@
   }
 }
 
-@keyframes fadein-home {
+@keyframes anim-fadein-home {
   from {
     opacity: 0;
     display: none;
@@ -25,195 +25,11 @@
   }
 }
 
-.spinner {
-  position: relative;
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: calc(100vh / 2);
-  &--fadein {
-    animation: fadein-home;
-    animation-delay: 3s;
-    animation-duration: 8s;
-    animation-fill-mode: forwards;
+@keyframes anim-fonctionnement-btn {
+  from {
   }
-
-  &__circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 50ms;
-  }
-  &__circle1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 100ms;
-  }
-  &__circle2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 150ms;
-  }
-  &__circle3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 200ms;
-  }
-  &__circle4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 250ms;
-  }
-
-  &__circle5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 300ms;
-  }
-
-  &__circle6 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 350ms;
-  }
-
-  &__circle7 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 400ms;
-  }
-
-  &__circle8 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 450ms;
-  }
-
-  &__circle9 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 500ms;
-  }
-
-  &__circle10 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 550ms;
-  }
-
-  &__circle11 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 600ms;
-  }
-
-  &__circle12 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 650ms;
-  }
-
-  &__circle13 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 700ms;
+  to {
+    background-color: #f5edff;
+    opacity: 0.8;
   }
 }

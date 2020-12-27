@@ -30,41 +30,6 @@
     width: 36rem;
     line-height: 2rem;
   }
-  &__btn {
-    height: 5rem;
-    width: 21.8rem;
-    color: white;
-    border-radius: 3rem;
-    border-style: none;
-    margin-top: 3.3rem;
-    margin-left: 0.6rem;
-    background: linear-gradient(
-      166deg,
-      rgba(214, 107, 219, 1) 0%,
-      rgba(228, 111, 218, 1) 22%,
-      rgba(217, 108, 219, 1) 43%,
-      rgba(168, 92, 219, 1) 82%
-    );
-    font-size: 1.6rem;
-    font-weight: 500;
-    font-family: "ROBOTO";
-    padding-bottom: 0.3rem;
-    padding-left: 0.8rem;
-    box-shadow: 0.7rem 0.7rem 0.7rem #c8c8c8;
-    margin-bottom: 5.7rem;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-  }
-  &__btn:hover {
-    background: linear-gradient(
-      306deg,
-      rgba(214, 107, 219, 1) 0%,
-      rgba(228, 111, 218, 1) 22%,
-      rgba(217, 108, 219, 1) 43%,
-      rgba(168, 92, 219, 1) 82%
-    );
-    cursor: pointer;
-  }
 }
 
 .fonctionnement {

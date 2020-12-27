@@ -399,7 +399,7 @@ body {
   width: 1px; }
 
 /* Animation */
-@keyframes loading-spinner {
+@keyframes anim-loading-spinner {
   from {
     transform: rotate(0deg) translateX(7rem) rotate(0deg);
     background-color: #ff79da;
@@ -409,7 +409,7 @@ body {
     background-color: #9356dc;
     opacity: 0; } }
 
-@keyframes fadein-home {
+@keyframes anim-fadein-home {
   from {
     opacity: 0;
     display: none; }
@@ -417,172 +417,11 @@ body {
     opacity: 1;
     display: flex; } }
 
-.spinner {
-  position: relative;
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: calc(100vh / 2); }
-  .spinner--fadein {
-    animation: fadein-home;
-    animation-delay: 3s;
-    animation-duration: 8s;
-    animation-fill-mode: forwards; }
-  .spinner__circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 50ms; }
-  .spinner__circle1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 100ms; }
-  .spinner__circle2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 150ms; }
-  .spinner__circle3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 200ms; }
-  .spinner__circle4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 250ms; }
-  .spinner__circle5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 300ms; }
-  .spinner__circle6 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 350ms; }
-  .spinner__circle7 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 400ms; }
-  .spinner__circle8 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 450ms; }
-  .spinner__circle9 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 500ms; }
-  .spinner__circle10 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 550ms; }
-  .spinner__circle11 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 600ms; }
-  .spinner__circle12 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 650ms; }
-  .spinner__circle13 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 700ms; }
+@keyframes anim-fonctionnement-btn {
+  from { }
+  to {
+    background-color: #f5edff;
+    opacity: 0.8; } }
 
 .homeheader {
   opacity: 0;
@@ -691,27 +530,6 @@ body {
     margin-left: 0.8rem;
     width: 36rem;
     line-height: 2rem; }
-  .introduction__btn {
-    height: 5rem;
-    width: 21.8rem;
-    color: white;
-    border-radius: 3rem;
-    border-style: none;
-    margin-top: 3.3rem;
-    margin-left: 0.6rem;
-    background: linear-gradient(166deg, #d66bdb 0%, #e46fda 22%, #d96cdb 43%, #a85cdb 82%);
-    font-size: 1.6rem;
-    font-weight: 500;
-    font-family: "ROBOTO";
-    padding-bottom: 0.3rem;
-    padding-left: 0.8rem;
-    box-shadow: 0.7rem 0.7rem 0.7rem #c8c8c8;
-    margin-bottom: 5.7rem;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out; }
-  .introduction__btn:hover {
-    background: linear-gradient(306deg, #d66bdb 0%, #e46fda 22%, #d96cdb 43%, #a85cdb 82%);
-    cursor: pointer; }
 
 .fonctionnement {
   margin-top: 4.7rem; }
@@ -746,8 +564,9 @@ body {
 .choisissez__btn:hover,
 .composez__btn:hover,
 .degustez__btn:hover {
-  background-color: #f5edff;
-  cursor: pointer; }
+  cursor: pointer;
+  animation: anim-fonctionnement-btn 500ms;
+  animation-fill-mode: forwards; }
 
 .choisissez__btn {
   margin-bottom: 2rem;
@@ -851,18 +670,32 @@ body {
     margin-right: 3rem;
     margin-top: 0.3rem; }
 
+.introduction__btn {
+  height: 5rem;
+  width: 21.8rem;
+  color: white;
+  border-radius: 3rem;
+  border-style: none;
+  margin-top: 3.3rem;
+  margin-left: 0.6rem;
+  background: linear-gradient(166deg, #d66bdb 0%, #e46fda 22%, #d96cdb 43%, #a85cdb 82%);
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "ROBOTO";
+  padding-bottom: 0.3rem;
+  padding-left: 0.8rem;
+  box-shadow: 0.7rem 0.7rem 0.7rem #c8c8c8;
+  margin-bottom: 5.7rem;
+  transition: all 0.3s ease-in-out; }
+  .introduction__btn:hover {
+    opacity: 0.6;
+    cursor: pointer; }
+
 .restaurants__1:hover,
 .restaurants__2:hover,
 .restaurants__3:hover,
 .restaurants__4:hover {
-  opacity: 1; }
-
-.restaurants__1,
-.restaurants__2,
-.restaurants__3,
-.restaurants__4 {
-  opacity: 0.7;
-  -webkit-transition: 0.3s ease-in-out;
+  opacity: 0.6;
   transition: 0.3s ease-in-out; }
 
 .restaurants__1 {
@@ -1211,3 +1044,184 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0; }
+
+.spinner {
+  position: relative;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(100vh / 2); }
+  .spinner--fadein {
+    animation: anim-fadein-home;
+    animation-delay: 3s;
+    animation-duration: 8s;
+    animation-fill-mode: forwards; }
+  .spinner__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 50ms;
+    animation-direction: alternate; }
+  .spinner__circle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 100ms;
+    animation-direction: alternate; }
+  .spinner__circle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 150ms;
+    animation-direction: alternate; }
+  .spinner__circle3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 200ms;
+    animation-direction: alternate; }
+  .spinner__circle4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 250ms;
+    animation-direction: alternate; }
+  .spinner__circle5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 300ms;
+    animation-direction: alternate; }
+  .spinner__circle6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 350ms;
+    animation-direction: alternate; }
+  .spinner__circle7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 400ms;
+    animation-direction: alternate; }
+  .spinner__circle8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 450ms;
+    animation-direction: alternate; }
+  .spinner__circle9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 500ms;
+    animation-direction: alternate; }
+  .spinner__circle10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 550ms;
+    animation-direction: alternate; }
+  .spinner__circle11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 600ms;
+    animation-direction: alternate; }
+  .spinner__circle12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 650ms;
+    animation-direction: alternate; }
+  .spinner__circle13 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 700ms;
+    animation-direction: alternate; }

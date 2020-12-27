@@ -10,3 +10,201 @@
   align-items: center;
   margin: 0;
 }
+
+.spinner {
+  position: relative;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(100vh / 2);
+
+  &--fadein {
+    animation: anim-fadein-home;
+    animation-delay: 3s;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+  }
+  &__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 50ms;
+    animation-direction: alternate;
+  }
+  &__circle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 100ms;
+    animation-direction: alternate;
+  }
+  &__circle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 150ms;
+    animation-direction: alternate;
+  }
+  &__circle3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 200ms;
+    animation-direction: alternate;
+  }
+  &__circle4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 250ms;
+    animation-direction: alternate;
+  }
+  &__circle5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 300ms;
+    animation-direction: alternate;
+  }
+  &__circle6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 350ms;
+    animation-direction: alternate;
+  }
+  &__circle7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 400ms;
+    animation-direction: alternate;
+  }
+  &__circle8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 450ms;
+    animation-direction: alternate;
+  }
+  &__circle9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 500ms;
+    animation-direction: alternate;
+  }
+  &__circle10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 550ms;
+    animation-direction: alternate;
+  }
+  &__circle11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 600ms;
+    animation-direction: alternate;
+  }
+  &__circle12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 650ms;
+    animation-direction: alternate;
+  }
+  &__circle13 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    animation: anim-loading-spinner 2s;
+    animation-iteration-count: 2;
+    animation-delay: 700ms;
+    animation-direction: alternate;
+  }
+}
