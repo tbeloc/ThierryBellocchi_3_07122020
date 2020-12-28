@@ -477,9 +477,15 @@ body {
 
 .menuheader {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .menuheader__left {
+    flex: 3; }
+    .menuheader__left__arrow {
+      flex: 3;
+      font-size: 2.1rem;
+      margin-top: 1rem;
+      margin-left: 2.3rem; }
   .menuheader__logo {
     height: 7.3rem;
     justify-content: center;
@@ -488,6 +494,8 @@ body {
     margin-bottom: -1rem; }
     .menuheader__logo__svg {
       width: 16.5rem; }
+  .menuheader__right {
+    flex: 3; }
 
 .homefooter {
   opacity: 0;

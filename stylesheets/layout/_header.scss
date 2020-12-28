@@ -60,11 +60,18 @@
 }
 
 .menuheader {
-  // opacity: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  &__left {
+    flex: 3;
+    &__arrow {
+      flex: 3;
+      font-size: 2.1rem;
+      margin-top: 1rem;
+      margin-left: 2.3rem;
+    }
+  }
   &__logo {
     height: 7.3rem;
     justify-content: center;
@@ -74,5 +81,8 @@
     &__svg {
       width: 16.5rem;
     }
+  }
+  &__right {
+    flex: 3;
   }
 }
