@@ -7,6 +7,15 @@ html {
   font-size: 62.5%;
   background-color: white;
   box-sizing: border-box;
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    font-size: 90%;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1439px) {
+    font-size: 100%;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 125%;
+  }
 }
 
 p {

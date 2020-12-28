@@ -3,20 +3,29 @@
 // -----------------------------------------------------------------------------
 .homefooter {
   opacity: 0;
-  // align-self: flex-start;
   background-color: #353535;
-  width: 37.5rem;
+  width: 100vw;
   height: 20rem;
   color: #ffffff;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
   &__title {
     font-family: "Shrikhand";
     margin-top: 2.5rem;
     margin-left: 2.4rem;
     font-size: 1.8rem;
     margin-bottom: 2rem;
+    @media screen and (min-width: 768px) {
+      margin-left: 0;
+    }
   }
   &__menu {
     margin-left: 2.5rem;
+    @media screen and (min-width: 768px) {
+      margin-left: 0;
+    }
     &__listewithicone {
       display: flex;
       justify-content: flex-start;
@@ -43,5 +52,12 @@
       font-size: 1.6rem;
       margin-top: 0.9rem;
     }
+  }
+}
+
+.homefooter__container {
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    width: 33.5rem;
   }
 }

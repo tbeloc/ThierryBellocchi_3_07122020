@@ -38,17 +38,19 @@
 
   <header class="homeheader spinner--fadein">
     <picture class="homeheader__logo"><img class="homeheader__logo__svg" src="./images/logo/ohmyfood@2x.svg"
-        alt="logo" /></picture>
+        alt="logo" />
+    </picture>
+
+
+  </header>
+
+  <main class="homemain spinner--fadein">
     <div class="homeheader__location">
       <address class="homeheader__location__mylocation">
         <i class="homeheader__location__mylocation__picto fas fa-map-marker-alt"></i>
         <input class="homeheader__location__mylocation__input" type="text" value="Paris, Belleville" disabled />
       </address>
     </div>
-
-  </header>
-
-  <main class="homemain spinner--fadein">
     <section class="introduction">
       <!-- H1 -->
       <h2 class="introduction__title">Réservez le menu qui vous convient</h2>
@@ -57,117 +59,123 @@
     </section>
     <nav class="fonctionnement">
       <h2 class="fonctionnement__title">Fonctionnement</h2>
-      <button class="choisissez__btn">
-        <i class="choisissez__btn__num">1</i>
-        <i class="choisissez__btn__logo fas fa-mobile-alt"></i>
-        <p class="choisissez__btn__txt">Choisissez un restaurant</p>
-      </button>
-      <button class="composez__btn">
-        <i class="composez__btn__num">2</i>
-        <i class="composez__btn__logo fas fa-list-ul"></i>
-        <p class="composez__btn__txt">Composez votre menu</p>
-      </button>
-      <button class="degustez__btn">
-        <i class="degustez__btn__num">3</i>
-        <i class="degustez__btn__logo fas fa-store"></i>
-        <p class="degustez__btn__txt">Dégustez au restaurant</p>
-      </button>
+      <div class="fonctionnement__btn">
+        <button class="choisissez__btn">
+          <i class="choisissez__btn__num">1</i>
+          <i class="choisissez__btn__logo fas fa-mobile-alt"></i>
+          <p class="choisissez__btn__txt">Choisissez un restaurant</p>
+        </button>
+        <button class="composez__btn">
+          <i class="composez__btn__num">2</i>
+          <i class="composez__btn__logo fas fa-list-ul"></i>
+          <p class="composez__btn__txt">Composez votre menu</p>
+        </button>
+        <button class="degustez__btn">
+          <i class="degustez__btn__num">3</i>
+          <i class="degustez__btn__logo fas fa-store"></i>
+          <p class="degustez__btn__txt">Dégustez au restaurant</p>
+        </button>
+      </div>
     </nav>
     <section class="restaurants">
-      <h2 class="restaurants__title">Restaurants</h2>
-      <a class="restaurants_link" href="#">
-        <article class="restaurants__1">
-          <div class="restaurants__1__vignette">
-            <img class="restaurants__1__vignette__photo"
-              src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="logo">
-            <div class="restaurants__1__state restaurants__1__state--new">Nouveau</div>
-          </div>
-          <div class="restaurants__1__specification">
-            <div class="restaurants__1__specification__txt">
-              <p class="restaurants__1__specification__txt__plat">La palette du goût</p>
-              <p class="restaurants__1__specification__txt__etablissement">Ménilmontant</p>
+      <div class="restaurants__container">
+        <h2 class="restaurants__title">Restaurants</h2>
+        <a class="restaurants_link" href="#">
+          <article class="restaurants__1">
+            <div class="restaurants__1__vignette">
+              <img class="restaurants__1__vignette__photo"
+                src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="logo">
+              <div class="restaurants__1__state restaurants__1__state--new">Nouveau</div>
             </div>
-            <a class="restaurants__1__specification__avis" href="#">
-              <i class=" restaurants__1__specification__avis--nolike far fa-heart fa-hover-hidden"></i>
-              <i class=" restaurants__1__specification__avis--like fas fa-heart fa-hover-show"></i>
-            </a>
-          </div>
-        </article>
-      </a>
-      <a class="restaurants_link" href="#">
-        <article class="restaurants__2">
-          <div class="restaurants__2__vignette">
-            <img class="restaurants__2__vignette__photo restaurants__vignette__photo-lapalette"
-              src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="logo">
-            <div class="restaurants__2__state restaurants__2__state--new">Nouveau</div>
-          </div>
-          <div class="restaurants__2__specification">
-            <div class="restaurants__2__specification__txt">
-              <p class="restaurants__2__specification__txt__plat">La note enchantée</p>
-              <p class="restaurants__2__specification__txt__etablissement">Charonne</p>
+            <div class="restaurants__1__specification">
+              <div class="restaurants__1__specification__txt">
+                <p class="restaurants__1__specification__txt__plat">La palette du goût</p>
+                <p class="restaurants__1__specification__txt__etablissement">Ménilmontant</p>
+              </div>
+              <a class="restaurants__1__specification__avis" href="#">
+                <i class=" restaurants__1__specification__avis--nolike far fa-heart fa-hover-hidden"></i>
+                <i class=" restaurants__1__specification__avis--like fas fa-heart fa-hover-show"></i>
+              </a>
             </div>
-            <a class="restaurants__2__specification__avis" href="#">
-              <i class=" restaurants__2__specification__avis--nolike far fa-heart fa-hover-hidden"></i>
-              <i class=" restaurants__2__specification__avis--like fas fa-heart fa-hover-show"></i>
-            </a>
-          </div>
-        </article>
-      </a>
-      <a class="restaurants_link" href="#">
-        <article class="restaurants__3">
-          <div class="restaurants__3__vignette">
-            <img class="restaurants__3__vignette__photo "
-              src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="logo">
-            <div class="restaurants__3__state restaurants__3__state--old">Nouveau</div>
-          </div>
-          <div class="restaurants__3__specification">
-            <div class="restaurants__3__specification__txt">
-              <p class="restaurants__3__specification__txt__plat">A la française</p>
-              <p class="restaurants__3__specification__txt__etablissement">Cité Rouge</p>
+          </article>
+        </a>
+        <a class="restaurants_link" href="#">
+          <article class="restaurants__2">
+            <div class="restaurants__2__vignette">
+              <img class="restaurants__2__vignette__photo restaurants__vignette__photo-lapalette"
+                src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="logo">
+              <div class="restaurants__2__state restaurants__2__state--new">Nouveau</div>
             </div>
-            <a class="restaurants__3__specification__avis" href="#">
-              <i class=" restaurants__3__specification__avis--nolike far fa-heart fa-hover-hidden"></i>
-              <i class=" restaurants__3__specification__avis--like fas fa-heart fa-hover-show"></i>
-            </a>
-          </div>
-        </article>
-      </a>
-      <a class="restaurants_link" href="#">
-        <article class="restaurants__4">
-          <div class="restaurants__4__vignette">
-            <img class="restaurants__4__vignette__photo"
-              src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="logo">
-            <div class="restaurants__4__state restaurants__4__state--old">Nouveau</div>
-          </div>
-          <div class="restaurants__4__specification">
-            <div class="restaurants__4__specification__txt">
-              <p class="restaurants__4__specification__txt__plat">Le délice des sens</p>
-              <p class="restaurants__4__specification__txt__etablissement">Folie-Méricourt</p>
+            <div class="restaurants__2__specification">
+              <div class="restaurants__2__specification__txt">
+                <p class="restaurants__2__specification__txt__plat">La note enchantée</p>
+                <p class="restaurants__2__specification__txt__etablissement">Charonne</p>
+              </div>
+              <a class="restaurants__2__specification__avis" href="#">
+                <i class=" restaurants__2__specification__avis--nolike far fa-heart fa-hover-hidden"></i>
+                <i class=" restaurants__2__specification__avis--like fas fa-heart fa-hover-show"></i>
+              </a>
             </div>
-            <a class="restaurants__4__specification__avis" href="#">
-              <i class=" restaurants__4__specification__avis--nolike far fa-heart fa-hover-hidden"></i>
-              <i class=" restaurants__4__specification__avis--like fas fa-heart fa-hover-show"></i>
-            </a>
-          </div>
-        </article>
-      </a>
+          </article>
+        </a>
+        <a class="restaurants_link" href="#">
+          <article class="restaurants__3">
+            <div class="restaurants__3__vignette">
+              <img class="restaurants__3__vignette__photo "
+                src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="logo">
+              <div class="restaurants__3__state restaurants__3__state--old">Nouveau</div>
+            </div>
+            <div class="restaurants__3__specification">
+              <div class="restaurants__3__specification__txt">
+                <p class="restaurants__3__specification__txt__plat">A la française</p>
+                <p class="restaurants__3__specification__txt__etablissement">Cité Rouge</p>
+              </div>
+              <a class="restaurants__3__specification__avis" href="#">
+                <i class=" restaurants__3__specification__avis--nolike far fa-heart fa-hover-hidden"></i>
+                <i class=" restaurants__3__specification__avis--like fas fa-heart fa-hover-show"></i>
+              </a>
+            </div>
+          </article>
+        </a>
+        <a class="restaurants_link" href="#">
+          <article class="restaurants__4">
+            <div class="restaurants__4__vignette">
+              <img class="restaurants__4__vignette__photo"
+                src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="logo">
+              <div class="restaurants__4__state restaurants__4__state--old">Nouveau</div>
+            </div>
+            <div class="restaurants__4__specification">
+              <div class="restaurants__4__specification__txt">
+                <p class="restaurants__4__specification__txt__plat">Le délice des sens</p>
+                <p class="restaurants__4__specification__txt__etablissement">Folie-Méricourt</p>
+              </div>
+              <a class="restaurants__4__specification__avis" href="#">
+                <i class=" restaurants__4__specification__avis--nolike far fa-heart fa-hover-hidden"></i>
+                <i class=" restaurants__4__specification__avis--like fas fa-heart fa-hover-show"></i>
+              </a>
+            </div>
+          </article>
+        </a>
+      </div>
     </section>
   </main>
 
   <footer class="homefooter spinner--fadein">
-    <p class="homefooter__title">ohmyfood</p>
-    <ul class="homefooter__menu">
-      <div class="homefooter__menu__listewithicone">
-        <i class="homefooter__menu__listewithicone_logo1 fas fa-utensils"></i>
-        <li class="homefooter__menu__listewithicone__title1">Proposer un restaurant</li>
-      </div>
-      <div class="homefooter__menu__listewithicone">
-        <i class="homefooter__menu__listewithicone_logo2 fas fa-hands-helping"></i>
-        <li class="homefooter__menu__listewithicone__title2">Devenir partenaire</li>
-      </div>
-      <li class="homefooter__menu__title">Mentions légales</li>
-      <li class="homefooter__menu__title">Contact</li>
-    </ul>
+    <div class="homefooter__container">
+      <p class="homefooter__title">ohmyfood</p>
+      <ul class="homefooter__menu">
+        <div class="homefooter__menu__listewithicone">
+          <i class="homefooter__menu__listewithicone_logo1 fas fa-utensils"></i>
+          <li class="homefooter__menu__listewithicone__title1">Proposer un restaurant</li>
+        </div>
+        <div class="homefooter__menu__listewithicone">
+          <i class="homefooter__menu__listewithicone_logo2 fas fa-hands-helping"></i>
+          <li class="homefooter__menu__listewithicone__title2">Devenir partenaire</li>
+        </div>
+        <li class="homefooter__menu__title">Mentions légales</li>
+        <li class="homefooter__menu__title">Contact</li>
+      </ul>
+    </div>
   </footer>
 
 </body>
