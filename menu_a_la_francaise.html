@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oh My Food !</title>
+  <title>Menu - À la française</title>
   <link rel="stylesheet" type="text/css" href="dist/main.css">
   <script src="https://kit.fontawesome.com/5b7786dca4.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,43 +14,60 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 
-<body class="home">
+<body class="menu">
 
-  <div class="spinner">
-    <div class="spinner__circle"></div>
-    <div class="spinner__circle1"></div>
-    <div class="spinner__circle2"></div>
-    <div class="spinner__circle3"></div>
-    <div class="spinner__circle4"></div>
-    <div class="spinner__circle5"></div>
-    <div class="spinner__circle6"></div>
-    <div class="spinner__circle7"></div>
-    <div class="spinner__circle8"></div>
-    <div class="spinner__circle9"></div>
-    <div class="spinner__circle10"></div>
-    <div class="spinner__circle11"></div>
-    <div class="spinner__circle12"></div>
-    <div class="spinner__circle13"></div>
-  </div>
-
-  <header class="homeheader spinner--fadein">
-    <picture class="homeheader__logo"><img class="homeheader__logo__svg" src="./images/logo/ohmyfood@2x.svg"
+  <header class="menuheader">
+    <picture class="menuheader__logo"><img class="menuheader__logo__svg" src="./images/logo/ohmyfood@2x.svg"
         alt="logo" />
     </picture>
-
-
   </header>
 
-  <main class="homemain spinner--fadein">
-    <div class="homeheader__location">
-      <address class="homeheader__location__mylocation">
-        <i class="homeheader__location__mylocation__picto fas fa-map-marker-alt"></i>
-        <input class="homeheader__location__mylocation__input" type="text" value="Paris, Belleville" disabled />
-      </address>
-    </div>
-    <section class="introduction">
-      <!-- H1 -->
-      <h2 class="introduction__title">Réservez le menu qui vous convient</h2>
+  <main class="menumain">
+
+    <picture class="menumain__photo"><img class="menumain__photo__resto"
+        src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant" />
+    </picture>
+    <section class="menumain__carte">
+      <h1 class="menumain__carte__title">A la française</h1>
+      <a class="menumain__carte__avis" href="#">
+        <i class="menumain__carte__avis--nolike far fa-heart fa-hover-hidden"></i>
+        <i class="menumain__carte__avis--like fas fa-heart fa-hover-show"></i>
+      </a>
+    </section>
+    <section class="menumain__entree">
+      <h2 class="menumain__entree__title">ENTREES</h2>
+      <article class="menumain__entree__plats">
+        <div class="menumain__entree__plats__plat">
+          <p class="menumain__entree__plats__nom">Tartare de poulpe acidulé
+          </p>
+          <p class="menumain__entree__plats__ingredient">Aux zestes d'orange
+          </p>
+        </div>
+        <p class="menumain__entree__plats__prix">25€
+        </p>
+      </article>
+      <!-- <article>
+        <div class="menumain__entree__plats__plat">
+          <p class="menumain__entree__plats__nom">Velouté de légumes d'antan
+          </p>
+          <p class="menumain__entree__plats__ingredient">Carotte, panais, topinambour
+          </p>
+        </div>
+        <p class="menumain__entree__plats__prix">35€
+        </p>
+      </article>
+      <article>
+        <div class="menumain__entree__plats__plat">
+          <p class="menumain__entree__plats__nom">Soupe à l'oignon
+          </p>
+          <p class="menumain__entree__plats__ingredient">Revisitée
+          </p>
+        </div>
+        <p class="menumain__entree__plats__prix">20€
+        </p>
+      </article> -->
+    </section>
+    <!--
       <p class="introduction__paragraph">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
       <button class="introduction__btn">Explorer nos restaurants</button>
     </section>
@@ -115,7 +132,7 @@
             </div>
           </article>
         </a>
-        <a class="restaurants_link" href="./menu_a_la_francaise.html">
+        <a class="restaurants_link" href="#">
           <article class="restaurants__3">
             <div class="restaurants__3__vignette">
               <img class="restaurants__3__vignette__photo "
@@ -154,26 +171,26 @@
           </article>
         </a>
       </div>
-    </section>
+    </section>-->
   </main>
 
-  <footer class="homefooter spinner--fadein">
-    <div class="homefooter__container">
-      <p class="homefooter__title">ohmyfood</p>
-      <ul class="homefooter__menu">
-        <div class="homefooter__menu__listewithicone">
-          <i class="homefooter__menu__listewithicone_logo1 fas fa-utensils"></i>
-          <li class="homefooter__menu__listewithicone__title1">Proposer un restaurant</li>
+  <!-- <footer class="menufooter">
+    <div class="menufooter__container">
+      <p class="menufooter__title">ohmyfood</p>
+      <ul class="menufooter__menu">
+        <div class="menufooter__menu__listewithicone">
+          <i class="menufooter__menu__listewithicone_logo1 fas fa-utensils"></i>
+          <li class="menufooter__menu__listewithicone__title1">Proposer un restaurant</li>
         </div>
-        <div class="homefooter__menu__listewithicone">
-          <i class="homefooter__menu__listewithicone_logo2 fas fa-hands-helping"></i>
-          <li class="homefooter__menu__listewithicone__title2">Devenir partenaire</li>
+        <div class="menufooter__menu__listewithicone">
+          <i class="menufooter__menu__listewithicone_logo2 fas fa-hands-helping"></i>
+          <li class="menufooter__menu__listewithicone__title2">Devenir partenaire</li>
         </div>
-        <li class="homefooter__menu__title">Mentions légales</li>
-        <li class="homefooter__menu__title">Contact</li>
+        <li class="menufooter__menu__title">Mentions légales</li>
+        <li class="menufooter__menu__title">Contact</li>
       </ul>
     </div>
-  </footer>
+  </footer> -->
 
 </body>
 

@@ -475,6 +475,20 @@ body {
         font-weight: 500;
         margin-right: 2.8rem; }
 
+.menuheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .menuheader__logo {
+    height: 7.3rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: -1rem; }
+    .menuheader__logo__svg {
+      width: 16.5rem; }
+
 .homefooter {
   opacity: 0;
   background-color: #353535;
@@ -584,6 +598,72 @@ body {
 
 .restaurants__container {
   display: inline-block; }
+
+.menumain {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6; }
+  .menumain__photo {
+    width: 100vw;
+    object-fit: cover; }
+    .menumain__photo__resto {
+      width: 37.6rem;
+      height: 27rem;
+      object-fit: cover;
+      margin: auto; }
+  .menumain__carte {
+    display: flex;
+    background-color: #f6f6f6;
+    border-radius: 4rem 4rem 0 0;
+    position: relative;
+    top: -5rem; }
+    .menumain__carte__title {
+      font-family: "Shrikhand";
+      font-size: 2.7rem;
+      margin-left: 2.1rem;
+      margin-top: 3.7rem; }
+    .menumain__carte__avis {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.4rem;
+      /* margin-bottom: 0.8rem; */
+      /* margin-right: 2.3rem; */
+      margin-left: 9.8rem;
+      margin-top: 1.1rem; }
+      .menumain__carte__avis:visited, .menumain__carte__avis:link, .menumain__carte__avis:active {
+        text-decoration: none; }
+      .menumain__carte__avis--nolike {
+        color: black; }
+      .menumain__carte__avis--like {
+        background: -webkit-linear-gradient(#a45cdc, #e471da);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+  .menumain__entree {
+    display: flex;
+    flex-direction: column;
+    margin-top: -4.5rem;
+    background-color: #f6f6f6; }
+    .menumain__entree__title {
+      font-weight: 400;
+      font-size: 1.6rem;
+      margin-left: 2rem;
+      margin-top: 1.2rem;
+      padding-bottom: 0.5rem; }
+    .menumain__entree__title:after {
+      content: "";
+      display: block;
+      border-bottom: 0.3rem solid #99e2d0;
+      width: 4rem;
+      position: relative;
+      bottom: -0.5rem; }
+    .menumain__entree__plats {
+      display: flex; }
+  .menumain * > .fa-hover-show,
+  .menumain *:hover > .fa-hover-hidden {
+    display: none; }
+  .menumain *:hover > .fa-hover-show {
+    display: inline-block; }
 
 .choisissez__btn, .composez__btn, .degustez__btn {
   display: flex;

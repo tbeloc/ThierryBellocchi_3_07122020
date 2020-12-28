@@ -58,3 +58,21 @@
     }
   }
 }
+
+.menuheader {
+  // opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__logo {
+    height: 7.3rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: -1rem;
+    &__svg {
+      width: 16.5rem;
+    }
+  }
+}
