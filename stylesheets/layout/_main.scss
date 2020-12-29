@@ -212,7 +212,8 @@
       font-weight: 400;
       font-size: 1.6rem;
       margin-left: 2rem;
-      margin-top: -3.5rem;
+      // margin-top: -3.5rem;
+      margin-top: 3rem;
       padding-bottom: 0.5rem;
     }
     &__title:after {
@@ -223,14 +224,14 @@
       position: relative;
       bottom: -0.5rem;
     }
-    &__plats {
+    &__plat {
       background-color: white;
       display: flex;
       width: 35rem;
       height: 7rem;
       border-radius: 1rem;
       margin-bottom: 1.1rem;
-      &__plat {
+      &__nomdescription {
         // border: green solid;
         width: 80%;
         &__nom {
@@ -239,7 +240,7 @@
           padding-left: 1.2rem;
           padding-top: 1.4rem;
         }
-        &__ingredient {
+        &__description {
           padding-left: 1.2rem;
           font-size: 1.5rem;
           padding-top: 0.6rem;
@@ -255,6 +256,102 @@
         padding-bottom: 1.2rem;
         font-size: 1.5rem;
         font-weight: 500;
+      }
+    }
+  }
+
+  &__desserts {
+    display: flex;
+    flex-direction: column;
+    margin-top: -4.5rem;
+    background-color: #f6f6f6;
+    justify-content: center;
+    align-items: center;
+    /* width: 27rem; */
+    /* border: red solid; */
+    margin-top: 0rem;
+    &__title {
+      font-weight: 400;
+      font-size: 1.6rem;
+      margin-left: 2rem;
+      // margin-top: -3.5rem;
+      margin-top: 3rem;
+      padding-bottom: 0.5rem;
+    }
+    &__title:after {
+      content: "";
+      display: block;
+      border-bottom: 0.3rem solid #99e2d0;
+      width: 4rem;
+      position: relative;
+      bottom: -0.5rem;
+    }
+    &__dessert {
+      background-color: white;
+      display: flex;
+      width: 35rem;
+      height: 7rem;
+      border-radius: 1rem;
+      margin-bottom: 1.1rem;
+      &__nomdescription {
+        // border: green solid;
+        width: 80%;
+        &__nom {
+          font-size: 1.8rem;
+          font-weight: 500;
+          padding-left: 1.2rem;
+          padding-top: 1.4rem;
+        }
+        &__description {
+          padding-left: 1.2rem;
+          font-size: 1.5rem;
+          padding-top: 0.6rem;
+          font-weight: 300;
+        }
+      }
+      &__prix {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 2.2rem;
+        padding-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    &__commander {
+      height: 5rem;
+      width: 19rem;
+      color: white;
+      border-radius: 3rem;
+      border-style: none;
+      margin-top: 3.3rem;
+      /* margin-left: 0.6rem; */
+      background: linear-gradient(
+        166deg,
+        #d66bdb 0%,
+        #e46fda 22%,
+        #d96cdb 43%,
+        #a85cdb 82%
+      );
+      font-size: 1.6rem;
+      font-weight: 500;
+      font-family: "ROBOTO";
+      padding-bottom: 0.3rem;
+      /* padding-left: 0.8rem; */
+      box-shadow: 0.7rem 0.7rem 0.7rem #c8c8c8;
+      margin-bottom: 5.7rem;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        opacity: 0.6;
+        cursor: pointer;
       }
     }
   }

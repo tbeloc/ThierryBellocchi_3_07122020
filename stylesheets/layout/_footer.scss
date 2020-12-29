@@ -61,3 +61,63 @@
     width: 33.5rem;
   }
 }
+
+.menufooter {
+  background-color: #353535;
+  width: 100vw;
+  height: 20rem;
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+  &__title {
+    font-family: "Shrikhand";
+    margin-top: 2.5rem;
+    margin-left: 2.4rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    @media screen and (min-width: 768px) {
+      margin-left: 0;
+    }
+  }
+  &__menu {
+    margin-left: 2.5rem;
+    @media screen and (min-width: 768px) {
+      margin-left: 0;
+    }
+    &__listewithicone {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 0.7rem;
+      &_logo1 {
+        font-size: 1.3rem;
+      }
+      &_logo2 {
+        font-size: 0.9rem;
+      }
+      &__title1 {
+        font-size: 1.6rem;
+        margin-left: 1.2rem;
+        margin-top: 0.1rem;
+      }
+      &__title2 {
+        font-size: 1.6rem;
+        margin-left: 1.1rem;
+        margin-top: 0.1rem;
+      }
+    }
+    &__title {
+      font-size: 1.6rem;
+      margin-top: 0.9rem;
+    }
+  }
+}
+
+.menufooter__container {
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    width: 33.5rem;
+  }
+}

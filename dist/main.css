@@ -547,6 +547,55 @@ body {
     display: inline-block;
     width: 33.5rem; } }
 
+.menufooter {
+  background-color: #353535;
+  width: 100vw;
+  height: 20rem;
+  color: #ffffff; }
+  @media screen and (min-width: 768px) {
+    .menufooter {
+      display: flex;
+      justify-content: center; } }
+  .menufooter__title {
+    font-family: "Shrikhand";
+    margin-top: 2.5rem;
+    margin-left: 2.4rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem; }
+    @media screen and (min-width: 768px) {
+      .menufooter__title {
+        margin-left: 0; } }
+  .menufooter__menu {
+    margin-left: 2.5rem; }
+    @media screen and (min-width: 768px) {
+      .menufooter__menu {
+        margin-left: 0; } }
+    .menufooter__menu__listewithicone {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 0.7rem; }
+      .menufooter__menu__listewithicone_logo1 {
+        font-size: 1.3rem; }
+      .menufooter__menu__listewithicone_logo2 {
+        font-size: 0.9rem; }
+      .menufooter__menu__listewithicone__title1 {
+        font-size: 1.6rem;
+        margin-left: 1.2rem;
+        margin-top: 0.1rem; }
+      .menufooter__menu__listewithicone__title2 {
+        font-size: 1.6rem;
+        margin-left: 1.1rem;
+        margin-top: 0.1rem; }
+    .menufooter__menu__title {
+      font-size: 1.6rem;
+      margin-top: 0.9rem; }
+
+@media screen and (min-width: 768px) {
+  .menufooter__container {
+    display: inline-block;
+    width: 33.5rem; } }
+
 .homemain {
   opacity: 0;
   width: 100vw;
@@ -712,7 +761,7 @@ body {
       font-weight: 400;
       font-size: 1.6rem;
       margin-left: 2rem;
-      margin-top: -3.5rem;
+      margin-top: 3rem;
       padding-bottom: 0.5rem; }
     .menumain__plats__title:after {
       content: "";
@@ -721,26 +770,26 @@ body {
       width: 4rem;
       position: relative;
       bottom: -0.5rem; }
-    .menumain__plats__plats {
+    .menumain__plats__plat {
       background-color: white;
       display: flex;
       width: 35rem;
       height: 7rem;
       border-radius: 1rem;
       margin-bottom: 1.1rem; }
-      .menumain__plats__plats__plat {
+      .menumain__plats__plat__nomdescription {
         width: 80%; }
-        .menumain__plats__plats__plat__nom {
+        .menumain__plats__plat__nomdescription__nom {
           font-size: 1.8rem;
           font-weight: 500;
           padding-left: 1.2rem;
           padding-top: 1.4rem; }
-        .menumain__plats__plats__plat__ingredient {
+        .menumain__plats__plat__nomdescription__description {
           padding-left: 1.2rem;
           font-size: 1.5rem;
           padding-top: 0.6rem;
           font-weight: 300; }
-      .menumain__plats__plats__prix {
+      .menumain__plats__plat__prix {
         width: 20%;
         display: flex;
         justify-content: flex-end;
@@ -749,6 +798,81 @@ body {
         padding-bottom: 1.2rem;
         font-size: 1.5rem;
         font-weight: 500; }
+  .menumain__desserts {
+    display: flex;
+    flex-direction: column;
+    margin-top: -4.5rem;
+    background-color: #f6f6f6;
+    justify-content: center;
+    align-items: center;
+    /* width: 27rem; */
+    /* border: red solid; */
+    margin-top: 0rem; }
+    .menumain__desserts__title {
+      font-weight: 400;
+      font-size: 1.6rem;
+      margin-left: 2rem;
+      margin-top: 3rem;
+      padding-bottom: 0.5rem; }
+    .menumain__desserts__title:after {
+      content: "";
+      display: block;
+      border-bottom: 0.3rem solid #99e2d0;
+      width: 4rem;
+      position: relative;
+      bottom: -0.5rem; }
+    .menumain__desserts__dessert {
+      background-color: white;
+      display: flex;
+      width: 35rem;
+      height: 7rem;
+      border-radius: 1rem;
+      margin-bottom: 1.1rem; }
+      .menumain__desserts__dessert__nomdescription {
+        width: 80%; }
+        .menumain__desserts__dessert__nomdescription__nom {
+          font-size: 1.8rem;
+          font-weight: 500;
+          padding-left: 1.2rem;
+          padding-top: 1.4rem; }
+        .menumain__desserts__dessert__nomdescription__description {
+          padding-left: 1.2rem;
+          font-size: 1.5rem;
+          padding-top: 0.6rem;
+          font-weight: 300; }
+      .menumain__desserts__dessert__prix {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 2.2rem;
+        padding-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500; }
+  .menumain__btn {
+    display: flex;
+    justify-content: center;
+    align-self: center; }
+    .menumain__btn__commander {
+      height: 5rem;
+      width: 19rem;
+      color: white;
+      border-radius: 3rem;
+      border-style: none;
+      margin-top: 3.3rem;
+      /* margin-left: 0.6rem; */
+      background: linear-gradient(166deg, #d66bdb 0%, #e46fda 22%, #d96cdb 43%, #a85cdb 82%);
+      font-size: 1.6rem;
+      font-weight: 500;
+      font-family: "ROBOTO";
+      padding-bottom: 0.3rem;
+      /* padding-left: 0.8rem; */
+      box-shadow: 0.7rem 0.7rem 0.7rem #c8c8c8;
+      margin-bottom: 5.7rem;
+      transition: all 0.3s ease-in-out; }
+      .menumain__btn__commander:hover {
+        opacity: 0.6;
+        cursor: pointer; }
   .menumain * > .fa-hover-show,
   .menumain *:hover > .fa-hover-hidden {
     display: none; }
