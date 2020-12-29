@@ -177,12 +177,15 @@
           font-weight: 500;
           padding-left: 1.2rem;
           padding-top: 1.4rem;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
         &__ingredient {
           padding-left: 1.2rem;
           font-size: 1.5rem;
           padding-top: 0.6rem;
           font-weight: 300;
+          text-overflow: ellipsis;
         }
       }
       &__prix {
@@ -195,6 +198,30 @@
         font-size: 1.5rem;
         font-weight: 500;
       }
+      &__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0;
+        width: 0;
+        animation: anim-menu-btn-out 400ms;
+        //   background-color: #99e2d0;
+        //   border-radius: 0 1rem 1rem 0;
+        //   color: white;
+      }
+      &__circle:hover {
+      }
+    }
+    &__plats:hover {
+      cursor: pointer;
+    }
+    &__plats:hover > .menumain__entree__plats__circle {
+      animation: anim-menu-btn-in 400ms forwards;
+    }
+    &__plats:hover
+      > .menumain__entree__plats__circle
+      > .menumain__entree__plats__circle__i {
+      animation: anim-menu-btn-i 400ms forwards;
     }
   }
 

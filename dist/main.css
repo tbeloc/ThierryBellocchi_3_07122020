@@ -432,6 +432,48 @@ body {
     background-color: #f5edff;
     opacity: 0.8; } }
 
+@keyframes anim-menu-btn-in {
+  from {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
+    border-radius: 0 1rem 1rem 0;
+    color: white; }
+  to {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9rem;
+    width: 7.2rem;
+    background-color: #99e2d0;
+    border-radius: 0 1rem 1rem 0;
+    color: white; } }
+
+@keyframes anim-menu-btn-out {
+  from {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.2rem;
+    background-color: #99e2d0;
+    border-radius: 0 1rem 1rem 0;
+    color: white; }
+  to {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9rem;
+    background-color: #99e2d0;
+    border-radius: 0 1rem 1rem 0;
+    color: white; } }
+
+@keyframes anim-menu-btn-i {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
 .homeheader {
   opacity: 0;
   display: flex;
@@ -733,12 +775,15 @@ body {
           font-size: 1.8rem;
           font-weight: 500;
           padding-left: 1.2rem;
-          padding-top: 1.4rem; }
+          padding-top: 1.4rem;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
         .menumain__entree__plats__plat__ingredient {
           padding-left: 1.2rem;
           font-size: 1.5rem;
           padding-top: 0.6rem;
-          font-weight: 300; }
+          font-weight: 300;
+          text-overflow: ellipsis; }
       .menumain__entree__plats__prix {
         width: 20%;
         display: flex;
@@ -748,6 +793,19 @@ body {
         padding-bottom: 1.2rem;
         font-size: 1.5rem;
         font-weight: 500; }
+      .menumain__entree__plats__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0;
+        width: 0;
+        animation: anim-menu-btn-out 400ms; }
+    .menumain__entree__plats:hover {
+      cursor: pointer; }
+    .menumain__entree__plats:hover > .menumain__entree__plats__circle {
+      animation: anim-menu-btn-in 400ms forwards; }
+    .menumain__entree__plats:hover > .menumain__entree__plats__circle > .menumain__entree__plats__circle__i {
+      animation: anim-menu-btn-i 400ms forwards; }
   .menumain__plats {
     display: flex;
     flex-direction: column;
