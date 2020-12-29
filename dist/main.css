@@ -624,7 +624,7 @@ body {
     background-color: #f6f6f6;
     border-radius: 4rem 4rem 0 0;
     position: relative;
-    top: -5rem; }
+    top: -5.2rem; }
     .menumain__carte__title {
       font-family: "Shrikhand";
       font-size: 2.7rem;
@@ -651,12 +651,17 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: -4.5rem;
-    background-color: #f6f6f6; }
+    background-color: #f6f6f6;
+    justify-content: center;
+    align-items: center;
+    /* width: 27rem; */
+    /* border: red solid; */
+    margin-top: 0rem; }
     .menumain__entree__title {
       font-weight: 400;
       font-size: 1.6rem;
       margin-left: 2rem;
-      margin-top: 1.2rem;
+      margin-top: -3.5rem;
       padding-bottom: 0.5rem; }
     .menumain__entree__title:after {
       content: "";
@@ -666,7 +671,84 @@ body {
       position: relative;
       bottom: -0.5rem; }
     .menumain__entree__plats {
-      display: flex; }
+      background-color: white;
+      display: flex;
+      width: 35rem;
+      height: 7rem;
+      border-radius: 1rem;
+      margin-bottom: 1.1rem; }
+      .menumain__entree__plats__plat {
+        width: 80%; }
+        .menumain__entree__plats__plat__nom {
+          font-size: 1.8rem;
+          font-weight: 500;
+          padding-left: 1.2rem;
+          padding-top: 1.4rem; }
+        .menumain__entree__plats__plat__ingredient {
+          padding-left: 1.2rem;
+          font-size: 1.5rem;
+          padding-top: 0.6rem;
+          font-weight: 300; }
+      .menumain__entree__plats__prix {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 2.2rem;
+        padding-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500; }
+  .menumain__plats {
+    display: flex;
+    flex-direction: column;
+    margin-top: -4.5rem;
+    background-color: #f6f6f6;
+    justify-content: center;
+    align-items: center;
+    /* width: 27rem; */
+    /* border: red solid; */
+    margin-top: 0rem; }
+    .menumain__plats__title {
+      font-weight: 400;
+      font-size: 1.6rem;
+      margin-left: 2rem;
+      margin-top: -3.5rem;
+      padding-bottom: 0.5rem; }
+    .menumain__plats__title:after {
+      content: "";
+      display: block;
+      border-bottom: 0.3rem solid #99e2d0;
+      width: 4rem;
+      position: relative;
+      bottom: -0.5rem; }
+    .menumain__plats__plats {
+      background-color: white;
+      display: flex;
+      width: 35rem;
+      height: 7rem;
+      border-radius: 1rem;
+      margin-bottom: 1.1rem; }
+      .menumain__plats__plats__plat {
+        width: 80%; }
+        .menumain__plats__plats__plat__nom {
+          font-size: 1.8rem;
+          font-weight: 500;
+          padding-left: 1.2rem;
+          padding-top: 1.4rem; }
+        .menumain__plats__plats__plat__ingredient {
+          padding-left: 1.2rem;
+          font-size: 1.5rem;
+          padding-top: 0.6rem;
+          font-weight: 300; }
+      .menumain__plats__plats__prix {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 2.2rem;
+        padding-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500; }
   .menumain * > .fa-hover-show,
   .menumain *:hover > .fa-hover-hidden {
     display: none; }
