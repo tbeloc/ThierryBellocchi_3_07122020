@@ -201,13 +201,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 0;
+        font-size: 1.9rem;
         overflow: hidden;
         width: 0rem;
         background-color: #99e2d0;
         border-radius: 0 1rem 1rem 0;
         color: white;
-        animation: anim-menu-btn-out 400ms forwards;
+        transition: width 400ms;
       }
     }
     &__plats:hover {
@@ -215,44 +215,14 @@
     }
 
     &__plats:hover > .menumain__entree__plats__circle {
-      animation: anim-menu-btn-in 400ms forwards;
+      width: 7.2rem;
     }
-
-    // &__plats::after > .menumain__entree__plats__circle {
-    //   content: "";
-    //   animation: anim-menu-btn-out 400ms forwards;
-    // }
 
     &__plats:hover
       > .menumain__entree__plats__circle
       > .menumain__entree__plats__circle__i {
       animation: anim-menu-btn-i 500ms;
     }
-
-    //   &__circle {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     font-size: 0;
-    //     overflow: hidden;
-    //   }
-    // }
-    // &__plats:hover {
-    //   cursor: pointer;
-    // }
-    // &__plats:hover > .menumain__entree__plats__circle {
-    //   animation: anim-menu-btn-in 400ms forwards;
-    // }
-    // &__plats:hover
-    //   > .menumain__entree__plats__circle
-    //   > .menumain__entree__plats__circle__i {
-    //   animation: anim-menu-btn-i 500ms;
-    // }
-
-    // &__plats:hover::after,
-    // &__plats:focus::after > .menumain__entree__plats__circle {
-    //   animation: anim-menu-btn-out 400ms;
-    // }
   }
 
   &__plats {

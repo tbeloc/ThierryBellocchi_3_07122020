@@ -432,32 +432,6 @@ body {
     background-color: #f5edff;
     opacity: 0.8; } }
 
-@keyframes anim-menu-btn-in {
-  from {
-    width: 0rem;
-    background-color: #99e2d0;
-    border-radius: 0 1rem 1rem 0;
-    color: white; }
-  to {
-    font-size: 1.9rem;
-    width: 7.2rem;
-    background-color: #99e2d0;
-    border-radius: 0 1rem 1rem 0;
-    color: white; } }
-
-@keyframes anim-menu-btn-out {
-  from {
-    font-size: 1.9rem;
-    width: 7.2rem;
-    background-color: #99e2d0;
-    border-radius: 0 1rem 1rem 0;
-    color: white; }
-  to {
-    width: 0rem;
-    background-color: #99e2d0;
-    border-radius: 0 1rem 1rem 0;
-    color: white; } }
-
 @keyframes anim-menu-btn-i {
   from {
     transform: rotate(0deg); }
@@ -787,17 +761,17 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 0;
+        font-size: 1.9rem;
         overflow: hidden;
         width: 0rem;
         background-color: #99e2d0;
         border-radius: 0 1rem 1rem 0;
         color: white;
-        animation: anim-menu-btn-out 400ms forwards; }
+        transition: width 400ms; }
     .menumain__entree__plats:hover {
       cursor: pointer; }
     .menumain__entree__plats:hover > .menumain__entree__plats__circle {
-      animation: anim-menu-btn-in 400ms forwards; }
+      width: 7.2rem; }
     .menumain__entree__plats:hover > .menumain__entree__plats__circle > .menumain__entree__plats__circle__i {
       animation: anim-menu-btn-i 500ms; }
   .menumain__plats {
