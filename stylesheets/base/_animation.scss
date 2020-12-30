@@ -36,18 +36,12 @@
 
 @keyframes anim-menu-btn-in {
   from {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // width: 7.2rem;
+    width: 0rem;
     background-color: #99e2d0;
     border-radius: 0 1rem 1rem 0;
     color: white;
   }
   to {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.9rem;
     width: 7.2rem;
     background-color: #99e2d0;
@@ -58,25 +52,29 @@
 
 @keyframes anim-menu-btn-out {
   from {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 1.9rem;
     width: 7.2rem;
     background-color: #99e2d0;
     border-radius: 0 1rem 1rem 0;
     color: white;
   }
   to {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.9rem;
-    // width: 7.2rem;
+    width: 0rem;
     background-color: #99e2d0;
     border-radius: 0 1rem 1rem 0;
     color: white;
   }
 }
+
+// @keyframes anim-menu-btn-out {
+//   100% {
+//     font-size: 1.9rem;
+//     width: 0rem;
+//     background-color: #99e2d0;
+//     border-radius: 0 1rem 1rem 0;
+//     color: red;
+//   }
+// }
 
 @keyframes anim-menu-btn-i {
   from {
@@ -86,3 +84,29 @@
     transform: rotate(360deg);
   }
 }
+
+// //
+// @keyframes anim-menu-btn-in {
+//   from {
+//     width: 0rem;
+//     background-color: #99e2d0;
+//     border-radius: 0 1rem 1rem 0;
+//     color: white;
+//   }
+//   to {
+//     font-size: 1.9rem;
+//     width: 7.2rem;
+//     background-color: #99e2d0;
+//     border-radius: 0 1rem 1rem 0;
+//     color: white;
+//   }
+// }
+
+// @keyframes anim-menu-btn-i {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }

@@ -434,16 +434,11 @@ body {
 
 @keyframes anim-menu-btn-in {
   from {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 0rem;
     background-color: #99e2d0;
     border-radius: 0 1rem 1rem 0;
     color: white; }
   to {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.9rem;
     width: 7.2rem;
     background-color: #99e2d0;
@@ -452,18 +447,13 @@ body {
 
 @keyframes anim-menu-btn-out {
   from {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 1.9rem;
     width: 7.2rem;
     background-color: #99e2d0;
     border-radius: 0 1rem 1rem 0;
     color: white; }
   to {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.9rem;
+    width: 0rem;
     background-color: #99e2d0;
     border-radius: 0 1rem 1rem 0;
     color: white; } }
@@ -798,14 +788,18 @@ body {
         justify-content: center;
         align-items: center;
         font-size: 0;
-        width: 0;
-        animation: anim-menu-btn-out 400ms; }
+        overflow: hidden;
+        width: 0rem;
+        background-color: #99e2d0;
+        border-radius: 0 1rem 1rem 0;
+        color: white;
+        animation: anim-menu-btn-out 400ms forwards; }
     .menumain__entree__plats:hover {
       cursor: pointer; }
     .menumain__entree__plats:hover > .menumain__entree__plats__circle {
       animation: anim-menu-btn-in 400ms forwards; }
     .menumain__entree__plats:hover > .menumain__entree__plats__circle > .menumain__entree__plats__circle__i {
-      animation: anim-menu-btn-i 400ms forwards; }
+      animation: anim-menu-btn-i 500ms; }
   .menumain__plats {
     display: flex;
     flex-direction: column;
