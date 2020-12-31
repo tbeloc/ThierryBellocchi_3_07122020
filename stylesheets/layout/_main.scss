@@ -228,18 +228,14 @@
   &__plats {
     display: flex;
     flex-direction: column;
-    margin-top: -4.5rem;
     background-color: #f6f6f6;
     justify-content: center;
     align-items: center;
-    /* width: 27rem; */
-    /* border: red solid; */
     margin-top: 0rem;
     &__title {
       font-weight: 400;
       font-size: 1.6rem;
       margin-left: 2rem;
-      // margin-top: -3.5rem;
       margin-top: 3rem;
       padding-bottom: 0.5rem;
     }
@@ -259,31 +255,76 @@
       border-radius: 1rem;
       margin-bottom: 1.1rem;
       &__nomdescription {
-        // border: green solid;
-        width: 80%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+        display: block;
         &__nom {
           font-size: 1.8rem;
           font-weight: 500;
           padding-left: 1.2rem;
           padding-top: 1.4rem;
+          width: 100%;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: block;
         }
         &__description {
           padding-left: 1.2rem;
           font-size: 1.5rem;
           padding-top: 0.6rem;
           font-weight: 300;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: block;
+          margin: auto;
+          padding-right: 2rem;
         }
       }
       &__prix {
-        width: 20%;
+        min-width: 5.8rem;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: flex-end;
-        padding-right: 2.2rem;
         padding-bottom: 1.2rem;
         font-size: 1.5rem;
         font-weight: 500;
       }
+      &__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.9rem;
+        overflow: hidden;
+        width: 0rem;
+        background-color: #99e2d0;
+        border-radius: 0 1rem 1rem 0;
+        color: white;
+        transition: width 400ms;
+      }
+    }
+    &__plat:hover {
+      cursor: pointer;
+    }
+
+    &__plat:hover > .menumain__plats__plat__circle {
+      // width: 7.2rem;
+      // width: 30%;
+      width: 9rem;
+    }
+
+    &__plat:hover > .menumain__plats__plat__nomdescription {
+      //  width: 66%;
+      // margin: auto;
+      padding-right: 2rem;
+    }
+
+    &__plat:hover
+      > .menumain__plats__plat__circle
+      > .menumain__plats__plat__circle__i {
+      animation: anim-menu-btn-i 500ms;
     }
   }
 

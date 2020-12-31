@@ -777,12 +777,9 @@ body {
   .menumain__plats {
     display: flex;
     flex-direction: column;
-    margin-top: -4.5rem;
     background-color: #f6f6f6;
     justify-content: center;
     align-items: center;
-    /* width: 27rem; */
-    /* border: red solid; */
     margin-top: 0rem; }
     .menumain__plats__title {
       font-weight: 400;
@@ -805,26 +802,58 @@ body {
       border-radius: 1rem;
       margin-bottom: 1.1rem; }
       .menumain__plats__plat__nomdescription {
-        width: 80%; }
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+        display: block; }
         .menumain__plats__plat__nomdescription__nom {
           font-size: 1.8rem;
           font-weight: 500;
           padding-left: 1.2rem;
-          padding-top: 1.4rem; }
+          padding-top: 1.4rem;
+          width: 100%;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: block; }
         .menumain__plats__plat__nomdescription__description {
           padding-left: 1.2rem;
           font-size: 1.5rem;
           padding-top: 0.6rem;
-          font-weight: 300; }
+          font-weight: 300;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: block;
+          margin: auto;
+          padding-right: 2rem; }
       .menumain__plats__plat__prix {
-        width: 20%;
+        min-width: 5.8rem;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: flex-end;
-        padding-right: 2.2rem;
         padding-bottom: 1.2rem;
         font-size: 1.5rem;
         font-weight: 500; }
+      .menumain__plats__plat__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.9rem;
+        overflow: hidden;
+        width: 0rem;
+        background-color: #99e2d0;
+        border-radius: 0 1rem 1rem 0;
+        color: white;
+        transition: width 400ms; }
+    .menumain__plats__plat:hover {
+      cursor: pointer; }
+    .menumain__plats__plat:hover > .menumain__plats__plat__circle {
+      width: 9rem; }
+    .menumain__plats__plat:hover > .menumain__plats__plat__nomdescription {
+      padding-right: 2rem; }
+    .menumain__plats__plat:hover > .menumain__plats__plat__circle > .menumain__plats__plat__circle__i {
+      animation: anim-menu-btn-i 500ms; }
   .menumain__desserts {
     display: flex;
     flex-direction: column;
