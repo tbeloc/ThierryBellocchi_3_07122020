@@ -811,10 +811,10 @@ body {
           font-weight: 500;
           padding-left: 1.2rem;
           padding-top: 1.4rem;
-          width: 100%;
           white-space: nowrap;
           text-overflow: ellipsis;
           overflow: hidden;
+          width: 100%;
           display: block; }
         .menumain__plats__plat__nomdescription__description {
           padding-left: 1.2rem;
@@ -849,9 +849,7 @@ body {
     .menumain__plats__plat:hover {
       cursor: pointer; }
     .menumain__plats__plat:hover > .menumain__plats__plat__circle {
-      width: 9rem; }
-    .menumain__plats__plat:hover > .menumain__plats__plat__nomdescription {
-      padding-right: 2rem; }
+      width: 25%; }
     .menumain__plats__plat:hover > .menumain__plats__plat__circle > .menumain__plats__plat__circle__i {
       animation: anim-menu-btn-i 500ms; }
   .menumain__desserts {
