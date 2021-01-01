@@ -706,12 +706,9 @@ body {
   .menumain__entree {
     display: flex;
     flex-direction: column;
-    margin-top: -4.5rem;
-    background-color: #f6f6f6;
     justify-content: center;
     align-items: center;
-    /* width: 27rem; */
-    /* border: red solid; */
+    background-color: #f6f6f6;
     margin-top: 0rem; }
     .menumain__entree__title {
       font-weight: 400;
@@ -726,38 +723,48 @@ body {
       width: 4rem;
       position: relative;
       bottom: -0.5rem; }
-    .menumain__entree__plats {
+    .menumain__entree__plat {
       background-color: white;
       display: flex;
       width: 35rem;
       height: 7rem;
       border-radius: 1rem;
       margin-bottom: 1.1rem; }
-      .menumain__entree__plats__plat {
-        width: 80%; }
-        .menumain__entree__plats__plat__nom {
+      .menumain__entree__plat__nomdescription {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+        display: block; }
+        .menumain__entree__plat__nomdescription__nom {
           font-size: 1.8rem;
           font-weight: 500;
           padding-left: 1.2rem;
           padding-top: 1.4rem;
+          white-space: nowrap;
           text-overflow: ellipsis;
-          white-space: nowrap; }
-        .menumain__entree__plats__plat__ingredient {
+          overflow: hidden;
+          width: 100%;
+          display: block; }
+        .menumain__entree__plat__nomdescription__description {
           padding-left: 1.2rem;
           font-size: 1.5rem;
           padding-top: 0.6rem;
           font-weight: 300;
-          text-overflow: ellipsis; }
-      .menumain__entree__plats__prix {
-        width: 20%;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: block;
+          margin: auto;
+          padding-right: 2rem; }
+      .menumain__entree__plat__prix {
+        min-width: 5.8rem;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: flex-end;
-        padding-right: 2.2rem;
         padding-bottom: 1.2rem;
         font-size: 1.5rem;
         font-weight: 500; }
-      .menumain__entree__plats__circle {
+      .menumain__entree__plat__circle {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -768,18 +775,18 @@ body {
         border-radius: 0 1rem 1rem 0;
         color: white;
         transition: width 400ms; }
-    .menumain__entree__plats:hover {
-      cursor: pointer; }
-    .menumain__entree__plats:hover > .menumain__entree__plats__circle {
-      width: 7.2rem; }
-    .menumain__entree__plats:hover > .menumain__entree__plats__circle > .menumain__entree__plats__circle__i {
-      animation: anim-menu-btn-i 500ms; }
+      .menumain__entree__plat:hover {
+        cursor: pointer; }
+      .menumain__entree__plat:hover > .menumain__entree__plat__circle {
+        width: 25%; }
+      .menumain__entree__plat:hover > .menumain__entree__plat__circle > .menumain__entree__plat__circle__i {
+        animation: anim-menu-btn-i 500ms; }
   .menumain__plats {
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6;
     justify-content: center;
     align-items: center;
+    background-color: #f6f6f6;
     margin-top: 0rem; }
     .menumain__plats__title {
       font-weight: 400;
@@ -855,18 +862,14 @@ body {
   .menumain__desserts {
     display: flex;
     flex-direction: column;
-    margin-top: -4.5rem;
-    background-color: #f6f6f6;
     justify-content: center;
     align-items: center;
-    /* width: 27rem; */
-    /* border: red solid; */
+    background-color: #f6f6f6;
     margin-top: 0rem; }
     .menumain__desserts__title {
       font-weight: 400;
       font-size: 1.6rem;
       margin-left: 2rem;
-      margin-top: 4rem;
       padding-bottom: 0.5rem; }
     .menumain__desserts__title:after {
       content: "";
@@ -875,34 +878,69 @@ body {
       width: 4rem;
       position: relative;
       bottom: -0.5rem; }
-    .menumain__desserts__dessert {
+    .menumain__desserts__plat {
       background-color: white;
       display: flex;
       width: 35rem;
       height: 7rem;
       border-radius: 1rem;
       margin-bottom: 1.1rem; }
-      .menumain__desserts__dessert__nomdescription {
-        width: 80%; }
-        .menumain__desserts__dessert__nomdescription__nom {
+      .menumain__desserts__plat__nomdescription {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+        display: block; }
+        .menumain__desserts__plat__nomdescription__nom {
           font-size: 1.8rem;
           font-weight: 500;
           padding-left: 1.2rem;
-          padding-top: 1.4rem; }
-        .menumain__desserts__dessert__nomdescription__description {
+          padding-top: 1.4rem;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          width: 100%;
+          display: block; }
+        .menumain__desserts__plat__nomdescription__description {
           padding-left: 1.2rem;
           font-size: 1.5rem;
           padding-top: 0.6rem;
-          font-weight: 300; }
-      .menumain__desserts__dessert__prix {
-        width: 20%;
+          font-weight: 300;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: block;
+          margin: auto;
+          padding-right: 2rem; }
+      .menumain__desserts__plat__prix {
+        min-width: 5.8rem;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: flex-end;
-        padding-right: 2.2rem;
         padding-bottom: 1.2rem;
         font-size: 1.5rem;
         font-weight: 500; }
+      .menumain__desserts__plat__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.9rem;
+        overflow: hidden;
+        width: 0rem;
+        background-color: #99e2d0;
+        border-radius: 0 1rem 1rem 0;
+        color: white;
+        transition: width 400ms; }
+      .menumain__desserts__plat:hover {
+        cursor: pointer; }
+      .menumain__desserts__plat:hover > .menumain__desserts__plat__circle {
+        width: 25%; }
+      .menumain__desserts__plat:hover > .menumain__desserts__plat__circle > .menumain__desserts__plat__circle__i {
+        animation: anim-menu-btn-i 500ms; }
+  .menumain * > .fa-hover-show,
+  .menumain *:hover > .fa-hover-hidden {
+    display: none; }
+  .menumain *:hover > .fa-hover-show {
+    display: inline-block; }
   .menumain__btn {
     display: flex;
     justify-content: center;
@@ -928,11 +966,6 @@ body {
       .menumain__btn__commander:hover {
         opacity: 0.6;
         cursor: pointer; }
-  .menumain * > .fa-hover-show,
-  .menumain *:hover > .fa-hover-hidden {
-    display: none; }
-  .menumain *:hover > .fa-hover-show {
-    display: inline-block; }
 
 .choisissez__btn, .composez__btn, .degustez__btn {
   display: flex;
