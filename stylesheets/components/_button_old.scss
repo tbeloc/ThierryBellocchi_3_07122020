@@ -7,11 +7,11 @@
   width: 32.2rem;
   height: 7.3rem;
   border-radius: 2rem;
-  font-size: 1.6rem;
-  font-weight: bold;
   background-color: $background_color_secondary;
   box-shadow: 0.7rem 0.7rem 0.7rem $box_shadow_secondary;
   border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
   transition: 0.3s ease-in-out;
 }
 
@@ -27,6 +27,7 @@
   border-style: none;
   box-shadow: 0.7rem 0.7rem 0.7rem $box_shadow_primary;
   background: $background_gradient_btn;
+  font-size: 1.6rem;
   font-weight: 500;
   color: $font_color_secondary;
   transition: all 0.3s ease-in-out;
@@ -42,25 +43,32 @@
   &__num {
     @include flex-row-c-c;
     width: 2.4rem;
-    height: 2.4rem;
+    height: 2.5rem;
     position: relative;
-    left: -3rem;
+    left: -2.4rem;
+    bottom: 0.2rem;
     margin-top: 0.4rem;
     border-radius: 2rem;
     background-color: $color_primary;
     color: $font_color_secondary;
     font-size: 1.4rem;
+    font-style: normal;
     font-weight: 400;
+    font-family: "Roboto";
   }
   &__logo {
-    color: $color_logo;
+    color: #7e7e7e;
     font-size: 2rem;
   }
   &__txt {
-    @include flex-row-c-c;
+    display: flex;
     width: 23.3rem;
-    margin-right: 1rem;
-    margin-top: 0.3rem;
+    font-family: "Roboto";
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    margin-top: 0.2rem;
   }
 }
 
@@ -70,55 +78,71 @@
   &__num {
     @include flex-row-c-c;
     width: 2.4rem;
-    height: 2.4rem;
+    height: 2.5rem;
     position: relative;
-    left: -3rem;
-    margin-top: 0.7rem;
+    left: -2.4rem;
+    bottom: 0.2rem;
+    margin-top: 0.4rem;
     border-radius: 2rem;
     background-color: $color_primary;
     color: $font_color_secondary;
     font-size: 1.4rem;
+    font-style: normal;
     font-weight: 400;
+    font-family: "Roboto";
   }
   &__logo {
-    color: $color_logo;
+    color: #7e7e7e;
     font-size: 2rem;
-    margin-top: 0.8rem;
   }
   &__txt {
-    @include flex-row-c-c;
-    width: 20.3rem;
+    display: flex;
+    width: 23.3rem;
+    font-family: "Roboto";
     font-weight: 500;
-    margin-right: 3.4rem;
-    margin-top: 0.9rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    margin-top: 0.2rem;
   }
 }
 
 .btn__degustez {
   @extend %btn__fonctionnement;
+  // margin-bottom: 2rem;
+  // margin-left: 3.3rem;
+  // margin-top: 2.6rem;
   margin-top: 2.7rem;
   &__num {
-    @include flex-row-c-c;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 2.4rem;
     height: 2.4rem;
     position: relative;
     left: -3rem;
     margin-top: 0.3rem;
     border-radius: 2rem;
-    background-color: $color_primary;
-    font-size: 1.4rem;
+    background-color: #9356dc;
+    color: white;
+    font-style: normal;
     font-weight: 400;
-    color: $font_color_secondary;
+    font-family: "Roboto";
   }
   &__logo {
-    color: $color_primary;
+    color: #7e7e7e;
+    font-size: 1.6rem;
     height: 1rem;
     margin-bottom: 0.2rem;
   }
   &__txt {
-    @include flex-row-c-c;
+    display: flex;
     width: 20.3rem;
+    font-family: "Roboto";
     font-weight: 500;
+    justify-content: center;
+    align-items: center;
     margin-right: 3rem;
     margin-top: 0.3rem;
   }
