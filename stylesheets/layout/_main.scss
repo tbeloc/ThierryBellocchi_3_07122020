@@ -1,39 +1,57 @@
-.homemain {
+.home__main {
+  @include flex-col-c-c;
+  width: 100vw;
   opacity: 0;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.introduction {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f6f6f6;
-  width: 100vw;
-  &__title {
-    font-family: $font_type_primary;
-    font-size: 2.4rem;
-    font-weight: bold;
-    text-align: center;
-    margin-left: -1.6rem;
-    margin-top: 4rem;
-    display: inline-block;
-    width: 28rem;
-    margin-bottom: 0;
+  &__location {
+    @include flex-row-c-c;
+    width: 100vw;
+    height: 5rem;
+    background: $background_gradient_location;
+    &__mylocation {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 16.5rem;
+      &__picto {
+        font-size: 1.6rem;
+        margin-bottom: 0.3rem;
+        padding-right: 1.6rem;
+      }
+      &__input {
+        @include font-16-500;
+        background-color: $background_color_input;
+        border-style: none;
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 0;
+        width: 11rem;
+        margin-right: 2.8rem;
+      }
+    }
   }
-  &__paragraph {
-    font-family: $font_type_primary;
-    font-size: 1.8rem;
-    font-weight: 300;
-    text-align: center;
-    margin-top: 1.4rem;
-    margin-left: 0.8rem;
-    width: 36rem;
-    line-height: 2rem;
+  &__intro {
+    @include flex-col-c-c;
+    background-color: $background_color_secondary;
+    width: 100vw;
+    &__title {
+      display: inline-block;
+      width: 28rem;
+      margin-top: 4rem;
+      margin-bottom: 0;
+      margin-left: -1.6rem;
+      font-size: 2.4rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    &__paragraph {
+      width: 36rem;
+      margin-top: 1.4rem;
+      margin-left: 0.8rem;
+      line-height: 2rem;
+      font-size: 1.8rem;
+      font-weight: 300;
+      text-align: center;
+    }
   }
 }
 

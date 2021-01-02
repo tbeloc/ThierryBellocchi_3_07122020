@@ -12,33 +12,6 @@
       width: 16.5rem;
     }
   }
-  &__location {
-    @include flex-row-c-c;
-    width: 100vw;
-    height: 5rem;
-    background: $background_gradient_location;
-    &__mylocation {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      width: 16.5rem;
-      &__picto {
-        font-size: 1.6rem;
-        margin-bottom: 0.3rem;
-        padding-right: 1.6rem;
-      }
-      &__input {
-        @include font-16-500;
-        background-color: $background_color_input;
-        border-style: none;
-        text-align: center;
-        font-size: 1.6rem;
-        padding: 0;
-        width: 11rem;
-        margin-right: 2.8rem;
-      }
-    }
-  }
 }
 
 .menuheader {
