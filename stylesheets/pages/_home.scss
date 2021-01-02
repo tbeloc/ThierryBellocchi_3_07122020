@@ -1,12 +1,7 @@
 // -----------------------------------------------------------------------------
-// Ce fichier contient des styles spécifiques à la page d'accueil...
+// Ce fichier contient des styles spécifiques à la page d'accueil.
 // -----------------------------------------------------------------------------
 
 .home {
   @include flex-col-c-c;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // margin: 0;
 }
