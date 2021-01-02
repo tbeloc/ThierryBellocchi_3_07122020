@@ -9,6 +9,19 @@
   align-items: center;
 }
 
+@mixin flex-row-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font-16-500 {
+  font-family: $font_type_primary;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: $font_color_primary;
+}
+
 /// Event wrapper
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector

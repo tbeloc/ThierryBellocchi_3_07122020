@@ -999,46 +999,47 @@ body {
 .circle--rotate-14 {
   animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
 
-.homeheader {
+.home__header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   opacity: 0; }
-  .homeheader__logo {
+  .home__header__logo {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 7.3rem;
     margin-bottom: -1rem; }
-    .homeheader__logo__svg {
+    .home__header__logo__svg {
       width: 16.5rem; }
-  .homeheader__location {
+  .home__header__location {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 5rem;
     background: linear-gradient(180deg, #cecece 0%, #d5d5d5 1%, #dddddd 2%, #e3e3e3 3%, #e8e8e8 4%, #eaeaea 100%); }
-    .homeheader__location__mylocation {
+    .home__header__location__mylocation {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       width: 16.5rem; }
-      .homeheader__location__mylocation__picto {
+      .home__header__location__mylocation__picto {
         font-size: 1.6rem;
         margin-bottom: 0.3rem;
         padding-right: 1.6rem; }
-      .homeheader__location__mylocation__input {
-        color: black;
+      .home__header__location__mylocation__input {
+        font-family: "Roboto";
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #000000;
         background-color: #eaeaea;
         border-style: none;
         text-align: center;
         font-size: 1.6rem;
         padding: 0;
         width: 11rem;
-        font-family: "Roboto";
-        font-weight: 500;
         margin-right: 2.8rem; }
 
 .menuheader {
