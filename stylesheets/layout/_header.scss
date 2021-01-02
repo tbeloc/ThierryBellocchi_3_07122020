@@ -23,7 +23,6 @@
     align-items: center;
     width: 100vw;
     height: 5rem;
-    // background: rgb(206, 206, 206);
     background: linear-gradient(
       180deg,
       rgba(206, 206, 206, 1) 0%,
@@ -51,7 +50,7 @@
         font-size: 1.6rem;
         padding: 0;
         width: 11rem;
-        font-family: $font_txt;
+        font-family: $font_type_primary;
         font-weight: 500;
         margin-right: 2.8rem;
       }

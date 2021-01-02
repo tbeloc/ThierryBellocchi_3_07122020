@@ -1,23 +1,23 @@
 @charset "UTF-8";
 
-// 1. Variables, fonctions & mixins
-@import "utils/variables", "utils/functions", "utils/mixins";
-
-// 2. Feuilles de style externes ( Normalize, Bootstrap ... )
+// 1. Feuilles de style externes ( Normalize, Bootstrap ... )
 @import "vendors/normalize";
 
-// 3. Style de base
+// 2. Variables, fonctions & mixins
+@import "utils/variables", "utils/functions", "utils/mixins";
+
+// 3. Contiens les thèmes différent ( Par exemple pour Noël )
+@import "themes/default";
+
+// 4. Style de base
 @import "base/base", "base/fonts", "base/typography", "base/helpers",
   "base/animation";
-
-// 4. Contiens les blocs BEM pour les parties principales
-@import "layout/header", "layout/footer", "layout/main";
 
 // 5. Contiens les blocs BEM qui sont plus indépendants
 @import "components/button", "components/restaurants", "components/spinner";
 
-// 6. Contiens les blocs BEM qui ne s’appliquent qu’à une seule page
-@import "pages/home";
+// 6. Contiens les blocs BEM pour les parties principales
+@import "layout/header", "layout/footer", "layout/main";
 
-// 7. Contiens les thèmes différent ( Par exemple pour Noël )
-@import "themes/default";
+// 7. Contiens les blocs BEM qui ne s’appliquent qu’à une seule page
+@import "pages/home";

@@ -3,10 +3,10 @@
 // -----------------------------------------------------------------------------
 
 .home {
-  // width: 37.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+  @include flex-col-c-c;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // margin: 0;
 }
