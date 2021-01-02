@@ -2,16 +2,16 @@
 // Ce fichier contient tous les styles liés à l'en-tête du site.
 // -----------------------------------------------------------------------------
 .homeheader {
-  opacity: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
   &__logo {
-    height: 7.3rem;
-    justify-content: center;
     display: flex;
+    justify-content: center;
     align-items: center;
+    height: 7.3rem;
     margin-bottom: -1rem;
     &__svg {
       width: 16.5rem;
@@ -23,7 +23,7 @@
     align-items: center;
     width: 100vw;
     height: 5rem;
-    background: rgb(206, 206, 206);
+    // background: rgb(206, 206, 206);
     background: linear-gradient(
       180deg,
       rgba(206, 206, 206, 1) 0%,

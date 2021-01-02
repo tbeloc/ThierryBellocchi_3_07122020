@@ -408,22 +408,6 @@ body {
   width: 1px; }
 
 /* Animation */
-@keyframes loading-spinner {
-  from {
-    transform: rotate(0deg) translateX(7rem) rotate(0deg);
-    background-color: #ff79da;
-    opacity: 0.5; }
-  to {
-    transform: rotate(360deg) translateX(7rem) rotate(-360deg);
-    background-color: #9356dc;
-    opacity: 0; } }
-
-@keyframes fadein-home {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
 @keyframes fadein-menu {
   from { }
   to {
@@ -443,16 +427,16 @@ body {
     opacity: 1; } }
 
 .homeheader {
-  opacity: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  opacity: 0; }
   .homeheader__logo {
-    height: 7.3rem;
-    justify-content: center;
     display: flex;
+    justify-content: center;
     align-items: center;
+    height: 7.3rem;
     margin-bottom: -1rem; }
     .homeheader__logo__svg {
       width: 16.5rem; }
@@ -462,7 +446,6 @@ body {
     align-items: center;
     width: 100vw;
     height: 5rem;
-    background: #cecece;
     background: linear-gradient(180deg, #cecece 0%, #d5d5d5 1%, #dddddd 2%, #e3e3e3 3%, #e8e8e8 4%, #eaeaea 100%); }
     .homeheader__location__mylocation {
       display: flex;
@@ -1474,56 +1457,88 @@ body {
   .restaurants__4 *:hover > .fa-hover-show {
     display: inline-block; }
 
-.spinner {
+@keyframes loading-spinner {
+  from {
+    transform: rotate(0deg) translateX(7rem) rotate(0deg);
+    background-color: #ff79da;
+    opacity: 0.5; }
+  to {
+    transform: rotate(360deg) translateX(7rem) rotate(-360deg);
+    background-color: #9356dc;
+    opacity: 0; } }
+
+@keyframes fadein-home {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.spinner--loading {
   position: relative;
   z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
   top: calc(100vh / 2); }
-  .spinner--fadein {
-    animation: fadein-home;
-    animation-delay: 3s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards; }
-  .spinner__circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: loading-spinner 2s;
-    animation-iteration-count: 2; }
-  .spinner__circle1 {
-    animation-delay: calc(0ms + 50ms); }
-  .spinner__circle2 {
-    animation-delay: calc(calc(0ms + 50ms) + 50ms); }
-  .spinner__circle3 {
-    animation-delay: calc(calc(calc(0ms + 50ms) + 50ms) + 50ms); }
-  .spinner__circle4 {
-    animation-delay: calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms); }
-  .spinner__circle5 {
-    animation-delay: calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
-  .spinner__circle6 {
-    animation-delay: calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
-  .spinner__circle7 {
-    animation-delay: calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
-  .spinner__circle8 {
-    animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
-  .spinner__circle9 {
-    animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
-  .spinner__circle10 {
-    animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
-  .spinner__circle11 {
-    animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
-  .spinner__circle12 {
-    animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
-  .spinner__circle13 {
-    animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
-  .spinner__circle14 {
-    animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
+
+.spinner--fadein {
+  animation: fadein-home;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards; }
+
+.circle--rotate-1, .circle--rotate-2, .circle--rotate-3, .circle--rotate-4, .circle--rotate-5, .circle--rotate-6, .circle--rotate-7, .circle--rotate-8, .circle--rotate-9, .circle--rotate-10, .circle--rotate-11, .circle--rotate-12, .circle--rotate-13, .circle--rotate-14 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  position: fixed;
+  animation: loading-spinner 2s;
+  animation-iteration-count: 2; }
+
+.circle--rotate-1 {
+  animation-delay: calc(0ms + 50ms); }
+
+.circle--rotate-2 {
+  animation-delay: calc(calc(0ms + 50ms) + 50ms); }
+
+.circle--rotate-3 {
+  animation-delay: calc(calc(calc(0ms + 50ms) + 50ms) + 50ms); }
+
+.circle--rotate-4 {
+  animation-delay: calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms); }
+
+.circle--rotate-5 {
+  animation-delay: calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
+
+.circle--rotate-6 {
+  animation-delay: calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
+
+.circle--rotate-7 {
+  animation-delay: calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
+
+.circle--rotate-8 {
+  animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
+
+.circle--rotate-9 {
+  animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
+
+.circle--rotate-10 {
+  animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
+
+.circle--rotate-11 {
+  animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
+
+.circle--rotate-12 {
+  animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
+
+.circle--rotate-13 {
+  animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
+
+.circle--rotate-14 {
+  animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
 
 .home {
   display: flex;

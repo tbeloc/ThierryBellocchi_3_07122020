@@ -1,27 +1,4 @@
 /* Animation */
-@keyframes loading-spinner {
-  from {
-    transform: rotate(0deg) translateX(7rem) rotate(0deg);
-    background-color: #ff79da;
-    opacity: 0.5;
-  }
-
-  to {
-    transform: rotate(360deg) translateX(7rem) rotate(-360deg);
-    background-color: #9356dc;
-    opacity: 0;
-  }
-}
-
-@keyframes fadein-home {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
 
 @keyframes fadein-menu {
   from {
