@@ -14,7 +14,7 @@
 @import "layout/header", "layout/footer", "layout/main";
 
 // 5. Contiens les blocs BEM qui sont plus indépendants
-@import "components/button", "components/restaurants";
+@import "components/button", "components/restaurants", "components/spinner";
 
 // 6. Contiens les blocs BEM qui ne s’appliquent qu’à une seule page
 @import "pages/home";

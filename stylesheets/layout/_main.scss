@@ -138,13 +138,17 @@
   }
 
   &__entree {
+    opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #f6f6f6;
     margin-top: 0rem;
+    animation: anim-menu-start 1s 0.5s forwards;
     &__title {
+      opacity: 0;
+      animation: anim-menu-start 1s 0.5s forwards;
       font-weight: 400;
       font-size: 1.6rem;
       margin-left: 2rem;
@@ -233,6 +237,8 @@
   }
 
   &__plats {
+    opacity: 0;
+    animation: anim-menu-start 1s 1s forwards;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -240,6 +246,8 @@
     background-color: #f6f6f6;
     margin-top: 0rem;
     &__title {
+      opacity: 0;
+      animation: anim-menu-start 1s 1s forwards;
       font-weight: 400;
       font-size: 1.6rem;
       margin-left: 2rem;
@@ -328,6 +336,8 @@
   }
 
   &__desserts {
+    opacity: 0;
+    animation: anim-menu-start 1s 1.5s forwards;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -335,6 +345,8 @@
     background-color: #f6f6f6;
     margin-top: 0rem;
     &__title {
+      opacity: 0;
+      animation: anim-menu-start 1s 1.5s forwards;
       font-weight: 400;
       font-size: 1.6rem;
       margin-left: 2rem;

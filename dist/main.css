@@ -408,7 +408,7 @@ body {
   width: 1px; }
 
 /* Animation */
-@keyframes anim-loading-spinner {
+@keyframes loading-spinner {
   from {
     transform: rotate(0deg) translateX(7rem) rotate(0deg);
     background-color: #ff79da;
@@ -418,15 +418,13 @@ body {
     background-color: #9356dc;
     opacity: 0; } }
 
-@keyframes anim-fadein-home {
+@keyframes fadein-home {
   from {
-    opacity: 0;
-    display: none; }
+    opacity: 0; }
   to {
-    opacity: 1;
-    display: flex; } }
+    opacity: 1; } }
 
-@keyframes anim-fonctionnement-btn {
+@keyframes fadein-menu {
   from { }
   to {
     background-color: #f5edff;
@@ -437,6 +435,12 @@ body {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+
+@keyframes anim-menu-start {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .homeheader {
   opacity: 0;
@@ -704,13 +708,17 @@ body {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
   .menumain__entree {
+    opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #f6f6f6;
-    margin-top: 0rem; }
+    margin-top: 0rem;
+    animation: anim-menu-start 1s 0.5s forwards; }
     .menumain__entree__title {
+      opacity: 0;
+      animation: anim-menu-start 1s 0.5s forwards;
       font-weight: 400;
       font-size: 1.6rem;
       margin-left: 2rem;
@@ -782,6 +790,8 @@ body {
       .menumain__entree__plat:hover > .menumain__entree__plat__circle > .menumain__entree__plat__circle__i {
         animation: anim-menu-btn-i 500ms; }
   .menumain__plats {
+    opacity: 0;
+    animation: anim-menu-start 1s 1s forwards;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -789,6 +799,8 @@ body {
     background-color: #f6f6f6;
     margin-top: 0rem; }
     .menumain__plats__title {
+      opacity: 0;
+      animation: anim-menu-start 1s 1s forwards;
       font-weight: 400;
       font-size: 1.6rem;
       margin-left: 2rem;
@@ -860,6 +872,8 @@ body {
     .menumain__plats__plat:hover > .menumain__plats__plat__circle > .menumain__plats__plat__circle__i {
       animation: anim-menu-btn-i 500ms; }
   .menumain__desserts {
+    opacity: 0;
+    animation: anim-menu-start 1s 1.5s forwards;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -867,6 +881,8 @@ body {
     background-color: #f6f6f6;
     margin-top: 0rem; }
     .menumain__desserts__title {
+      opacity: 0;
+      animation: anim-menu-start 1s 1.5s forwards;
       font-weight: 400;
       font-size: 1.6rem;
       margin-left: 2rem;
@@ -987,7 +1003,7 @@ body {
 .composez__btn:hover,
 .degustez__btn:hover {
   cursor: pointer;
-  animation: anim-fonctionnement-btn 500ms;
+  animation: fadein-menu 500ms;
   animation-fill-mode: forwards; }
 
 .choisissez__btn {
@@ -1458,13 +1474,6 @@ body {
   .restaurants__4 *:hover > .fa-hover-show {
     display: inline-block; }
 
-.home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0; }
-
 .spinner {
   position: relative;
   z-index: 999;
@@ -1473,9 +1482,9 @@ body {
   align-items: center;
   top: calc(100vh / 2); }
   .spinner--fadein {
-    animation: anim-fadein-home;
+    animation: fadein-home;
     animation-delay: 3s;
-    animation-duration: 8s;
+    animation-duration: 2s;
     animation-fill-mode: forwards; }
   .spinner__circle {
     display: flex;
@@ -1485,163 +1494,40 @@ body {
     height: 2rem;
     border-radius: 2rem;
     position: fixed;
-    animation: anim-loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 50ms;
-    animation-direction: alternate; }
+    animation: loading-spinner 2s;
+    animation-iteration-count: 2; }
   .spinner__circle1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: anim-loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 100ms;
-    animation-direction: alternate; }
+    animation-delay: calc(0ms + 50ms); }
   .spinner__circle2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: anim-loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 150ms;
-    animation-direction: alternate; }
+    animation-delay: calc(calc(0ms + 50ms) + 50ms); }
   .spinner__circle3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: anim-loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 200ms;
-    animation-direction: alternate; }
+    animation-delay: calc(calc(calc(0ms + 50ms) + 50ms) + 50ms); }
   .spinner__circle4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: anim-loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 250ms;
-    animation-direction: alternate; }
+    animation-delay: calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms); }
   .spinner__circle5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: anim-loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 300ms;
-    animation-direction: alternate; }
+    animation-delay: calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
   .spinner__circle6 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: anim-loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 350ms;
-    animation-direction: alternate; }
+    animation-delay: calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
   .spinner__circle7 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: anim-loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 400ms;
-    animation-direction: alternate; }
+    animation-delay: calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
   .spinner__circle8 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: anim-loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 450ms;
-    animation-direction: alternate; }
+    animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
   .spinner__circle9 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: anim-loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 500ms;
-    animation-direction: alternate; }
+    animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
   .spinner__circle10 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: anim-loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 550ms;
-    animation-direction: alternate; }
+    animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
   .spinner__circle11 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: anim-loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 600ms;
-    animation-direction: alternate; }
+    animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
   .spinner__circle12 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: anim-loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 650ms;
-    animation-direction: alternate; }
+    animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
   .spinner__circle13 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 2rem;
-    position: fixed;
-    animation: anim-loading-spinner 2s;
-    animation-iteration-count: 2;
-    animation-delay: 700ms;
-    animation-direction: alternate; }
+    animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
+  .spinner__circle14 {
+    animation-delay: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(0ms + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms) + 50ms); }
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0; }

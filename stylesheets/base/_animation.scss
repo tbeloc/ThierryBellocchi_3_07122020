@@ -1,5 +1,5 @@
 /* Animation */
-@keyframes anim-loading-spinner {
+@keyframes loading-spinner {
   from {
     transform: rotate(0deg) translateX(7rem) rotate(0deg);
     background-color: #ff79da;
@@ -13,19 +13,17 @@
   }
 }
 
-@keyframes anim-fadein-home {
+@keyframes fadein-home {
   from {
     opacity: 0;
-    display: none;
   }
 
   to {
     opacity: 1;
-    display: flex;
   }
 }
 
-@keyframes anim-fonctionnement-btn {
+@keyframes fadein-menu {
   from {
   }
   to {
@@ -40,5 +38,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes anim-menu-start {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
