@@ -1,8 +1,9 @@
 // -----------------------------------------------------------------------------
 // Ce fichier contient tous les styles liés à l'en-tête du site.
 // -----------------------------------------------------------------------------
-.home__header {
-  @include flex-col-c-c;
+
+.header {
+  @include flex-row-c-c;
   opacity: 0;
   &__logo {
     @include flex-row-c-c;
@@ -12,12 +13,35 @@
       width: 16.5rem;
     }
   }
+  &__left {
+    flex: 3;
+    &__arrow {
+      flex: 3;
+      font-size: 2.1rem;
+      margin-top: 1rem;
+      margin-left: 2.3rem;
+    }
+  }
+  &__right {
+    flex: 3;
+  }
 }
 
+// .home__header {
+//   @include flex-col-c-c;
+//   opacity: 0;
+//   &__logo {
+//     @include flex-row-c-c;
+//     height: 7.3rem;
+//     margin-bottom: -1rem;
+//     &__svg {
+//       width: 16.5rem;
+//     }
+//   }
+// }
+
 .menuheader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-row-c-c;
   &__left {
     flex: 3;
     &__arrow {
@@ -28,10 +52,8 @@
     }
   }
   &__logo {
+    @include flex-row-c-c;
     height: 7.3rem;
-    justify-content: center;
-    display: flex;
-    align-items: center;
     margin-bottom: -1rem;
     &__svg {
       width: 16.5rem;

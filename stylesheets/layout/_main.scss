@@ -67,24 +67,16 @@
 
 .restaurants {
   width: 100vw;
-  // height: 117.4rem;
   display: flex;
   justify-content: center;
-  // width: 100vw;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // flex-direction: column;
-  background-color: #f6f6f6;
+  background-color: $background_color_secondary;
   margin-top: 6.7rem;
   padding-top: 3.5rem;
   height: 122.6rem;
   &__title {
     align-self: flex-start;
     font-size: 2.4rem;
-    // margin-left: 2rem;
     @media screen and (min-width: 768px) and (max-width: 991px) {
-      // margin-left: 3rem;
     }
   }
 }
@@ -92,9 +84,6 @@
 .restaurants__container {
   display: inline-block;
   @media screen and (min-width: 768px) and (max-width: 991px) {
-    // margin-left: 2rem;
-    // margin-right: 2rem;
-    // margin-bottom: 2rem;
   }
 }
 
@@ -160,10 +149,10 @@
     align-items: center;
     background-color: #f6f6f6;
     margin-top: 0rem;
-    animation: anim-menu-start 1s 0.5s forwards;
+    animation: fadein 1s 0.5s forwards;
     &__title {
       opacity: 0;
-      animation: anim-menu-start 1s 0.5s forwards;
+      animation: fadein 1s 0.5s forwards;
       font-weight: 400;
       font-size: 1.6rem;
       margin-left: 2rem;
@@ -253,7 +242,7 @@
 
   &__plats {
     opacity: 0;
-    animation: anim-menu-start 1s 1s forwards;
+    animation: fadein 1s 1s forwards;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -262,7 +251,7 @@
     margin-top: 0rem;
     &__title {
       opacity: 0;
-      animation: anim-menu-start 1s 1s forwards;
+      animation: fadein 1s 1s forwards;
       font-weight: 400;
       font-size: 1.6rem;
       margin-left: 2rem;
@@ -352,7 +341,7 @@
 
   &__desserts {
     opacity: 0;
-    animation: anim-menu-start 1s 1.5s forwards;
+    animation: fadein 1s 1.5s forwards;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -361,7 +350,7 @@
     margin-top: 0rem;
     &__title {
       opacity: 0;
-      animation: anim-menu-start 1s 1.5s forwards;
+      animation: fadein 1s 1.5s forwards;
       font-weight: 400;
       font-size: 1.6rem;
       margin-left: 2rem;

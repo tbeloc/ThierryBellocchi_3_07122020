@@ -13,9 +13,13 @@
   <link rel="stylesheet" type="text/css" href="dist/main.css">
 </head>
 
-<body class="home">
+<!-- "pages/index" -->
 
-  <div class="spinner--loading">
+<body class="index">
+
+  <!-- "pages/index" -->
+  <!-- Loading spinner & fade in -->
+  <div class="index--loading">
     <div class="circle--rotate-1"></div>
     <div class="circle--rotate-2"></div>
     <div class="circle--rotate-3"></div>
@@ -32,47 +36,66 @@
     <div class="circle--rotate-14"></div>
   </div>
 
-  <header class="home__header spinner--fadein">
-    <picture class="home__header__logo"><img class="home__header__logo__svg" src="./images/logo/ohmyfood@2x.svg"
-        alt="logo" />
+  <!-- "layout/header" & "base/animation" -->
+  <!-- Header -->
+  <header class="header fadein">
+    <picture class="header__logo"><img class="header__logo__svg" src="./images/logo/ohmyfood@2x.svg" alt="logo" />
     </picture>
-
-
   </header>
 
-  <main class="home__main spinner--fadein">
-    <div class="home__main__location">
-      <address class="home__main__location__mylocation">
-        <i class="home__main__location__mylocation__picto fas fa-map-marker-alt"></i>
-        <input class="home__main__location__mylocation__input" type="text" value="Paris, Belleville" disabled />
+  <!-- "pages/index" -->
+  <!-- Main -->
+  <main class="index__main fadein">
+
+    <!-- "pages/index" -->
+    <!-- Address location -->
+    <div class="location">
+      <address class="location__mylocation">
+        <i class="location__mylocation__picto fas fa-map-marker-alt"></i>
+        <input class="location__mylocation__input" type="text" value="Paris, Belleville" disabled />
       </address>
     </div>
-    <section class="home__main__intro">
-      <!-- H1 -->
-      <h2 class="home__main__intro__title">Réservez le menu qui vous convient</h2>
-      <p class="home__main__intro__paragraph">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-      <button class="btn__intro">Explorer nos restaurants</button>
+
+    <!-- "pages/index" -->
+    <!-- Introduction -->
+    <section class="intro">
+      <h1 class="intro__title">Réservez le menu qui vous convient</h1>
+      <p class="intro__paragraph">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+      <!-- "components/button" -->
+      <!-- Bouton -->
+      <button class="btn--intro">Explorer nos restaurants</button>
     </section>
-    <nav class="home__main__fonctionnement">
-      <h2 class="home__main__fonctionnement__title">Fonctionnement</h2>
+
+    <!-- "pages/index" -->
+    <!-- Fonctionnement -->
+    <section class="fonctionnement">
+      <h2 class="fonctionnement__title">Fonctionnement</h2>
       <div>
+        <!-- "components/button" -->
+        <!-- Bouton -->
         <button class="btn__choisissez">
           <i class="btn__choisissez__num">1</i>
           <i class="btn__choisissez__logo fas fa-mobile-alt"></i>
           <p class="btn__choisissez__txt">Choisissez un restaurant</p>
         </button>
+        <!-- "components/button" -->
+        <!-- Bouton -->
         <button class="btn__composez">
           <i class="btn__composez__num">2</i>
           <i class="btn__composez__logo fas fa-list-ul"></i>
           <p class="btn__composez__txt">Composez votre menu</p>
         </button>
+        <!-- "components/button" -->
+        <!-- Bouton -->
         <button class="btn__degustez">
           <i class="btn__degustez__num">3</i>
           <i class="btn__degustez__logo fas fa-store"></i>
           <p class="btn__degustez__txt">Dégustez au restaurant</p>
         </button>
       </div>
-    </nav>
+    </section>
+
+
     <section class="restaurants">
       <div class="restaurants__container">
         <h2 class="restaurants__title">Restaurants</h2>
@@ -156,7 +179,7 @@
     </section>
   </main>
 
-  <footer class="homefooter spinner--fadein">
+  <footer class="homefooter fadein">
     <div class="homefooter__container">
       <p class="homefooter__title">ohmyfood</p>
       <ul class="homefooter__menu">

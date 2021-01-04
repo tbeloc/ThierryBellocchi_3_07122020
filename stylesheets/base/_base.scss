@@ -30,6 +30,11 @@ i {
   font-style: normal;
 }
 
+input {
+  border-style: none;
+  padding: 0;
+}
+
 // Voir: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 *,
 *::before,

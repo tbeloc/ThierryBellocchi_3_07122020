@@ -1,0 +1,109 @@
+// -----------------------------------------------------------------------------
+// Ce fichier contient des styles spécifiques à la page index
+// -----------------------------------------------------------------------------
+
+// Extend circle for loading spinner
+%circle--rotate {
+  @include flex-row-c-c;
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  border-radius: 2rem;
+  animation: loading-spinner 2s;
+  animation-iteration-count: 2;
+}
+
+// Init for create circle
+$circle-delay: 0ms;
+$circle-inc: 50ms;
+
+// Create 14 x circle for loading spinner
+@for $i from 1 through 14 {
+  $circle-delay: calc(#{$circle-delay} + #{$circle-inc});
+  .circle--rotate-#{$i} {
+    @extend %circle--rotate;
+    animation-delay: $circle-delay;
+  }
+}
+
+// Body
+.index {
+  //Main
+  &__main {
+    @include flex-col-c-c;
+    width: 100vw;
+    opacity: 0;
+  }
+  // Loading spinner & fade in
+  &--loading {
+    @include flex-row-c-c;
+    position: relative;
+    z-index: 999;
+    top: calc(100vh / 2);
+  }
+}
+
+// Address location
+.location {
+  @include flex-row-c-c;
+  width: 100vw;
+  height: 5rem;
+  background: $background_gradient_location;
+  &__mylocation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 16.5rem;
+    // Fontawesome location
+    &__picto {
+      margin-bottom: 0.3rem;
+      padding-right: 1.6rem;
+    }
+    // Input address location
+    &__input {
+      @include font-16-500;
+      background-color: $background_color_input;
+      text-align: center;
+      width: 11rem;
+      margin-right: 2.8rem;
+    }
+  }
+}
+
+// Introduction
+.intro {
+  @include flex-col-c-c;
+  background-color: $background_color_secondary;
+  width: 100vw;
+  &__title {
+    display: inline-block;
+    width: 28rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    margin-left: -1.6rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__paragraph {
+    width: 36rem;
+    margin-top: 1.4rem;
+    margin-left: 0.8rem;
+    line-height: 2rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+// Fonctionnement
+.fonctionnement {
+  @include flex-col-c-c;
+  margin-top: 2.7rem;
+  &__title {
+    font-size: 2.4rem;
+    align-self: flex-start;
+    margin-left: -0.7rem;
+    margin-top: 2.1rem;
+  }
+}

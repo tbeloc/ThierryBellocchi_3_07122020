@@ -1,11 +1,22 @@
 /* Animation */
 
-@keyframes fadein-menu {
+@keyframes loading-spinner {
   from {
+    transform: rotate(0deg) translateX(7rem) rotate(0deg);
+    background-color: #ff79da;
+    opacity: 0.5;
   }
+
   to {
-    background-color: #f5edff;
-    opacity: 0.8;
+    transform: rotate(360deg) translateX(7rem) rotate(-360deg);
+    background-color: #9356dc;
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  to {
+    opacity: 1;
   }
 }
 
@@ -18,11 +29,9 @@
   }
 }
 
-@keyframes anim-menu-start {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.fadein {
+  animation: fadein;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
