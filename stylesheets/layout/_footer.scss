@@ -1,18 +1,26 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
-.homefooter {
+.footer {
   opacity: 0;
-  background-color: #353535;
-  width: 100vw;
+  background-color: $background_color_footer;
+  width: 100%;
   height: 20rem;
-  color: #ffffff;
+  padding-top: 1rem;
+  color: $font_color_secondary;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
   }
+  &__container {
+    margin-top: -1rem;
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      width: 33.5rem;
+    }
+  }
   &__title {
-    font-family: "Shrikhand";
+    font-family: $font_type_secondary;
     margin-top: 2.5rem;
     margin-left: 2.4rem;
     font-size: 1.8rem;
@@ -26,39 +34,36 @@
     @media screen and (min-width: 768px) {
       margin-left: 0;
     }
-    &__listewithicone {
+    &__items {
+      margin-top: 0.9rem;
+      &--link,
+      &--link:visited,
+      &--link:hover,
+      &--link:link {
+        color: $font_color_secondary;
+      }
+    }
+
+    &__itemswithicon {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       margin-top: 0.7rem;
-      &_logo1 {
+      &__fork {
         font-size: 1.3rem;
+        &__txt {
+          margin-left: 1.2rem;
+          margin-top: 0.1rem;
+        }
       }
-      &_logo2 {
+      &__hands {
         font-size: 0.9rem;
-      }
-      &__title1 {
-        font-size: 1.6rem;
-        margin-left: 1.2rem;
-        margin-top: 0.1rem;
-      }
-      &__title2 {
-        font-size: 1.6rem;
-        margin-left: 1.1rem;
-        margin-top: 0.1rem;
+        &__txt {
+          margin-left: 1.1rem;
+          margin-top: 0.1rem;
+        }
       }
     }
-    &__title {
-      font-size: 1.6rem;
-      margin-top: 0.9rem;
-    }
-  }
-}
-
-.homefooter__container {
-  @media screen and (min-width: 768px) {
-    display: inline-block;
-    width: 33.5rem;
   }
 }
 

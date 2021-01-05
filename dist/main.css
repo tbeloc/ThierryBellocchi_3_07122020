@@ -970,55 +970,56 @@ body {
   .header__right {
     flex: 3; }
 
-.homefooter {
+.footer {
   opacity: 0;
   background-color: #353535;
-  width: 100vw;
+  width: 100%;
   height: 20rem;
+  padding-top: 1rem;
   color: #ffffff; }
   @media screen and (min-width: 768px) {
-    .homefooter {
+    .footer {
       display: flex;
       justify-content: center; } }
-  .homefooter__title {
+  .footer__container {
+    margin-top: -1rem; }
+    @media screen and (min-width: 768px) {
+      .footer__container {
+        display: inline-block;
+        width: 33.5rem; } }
+  .footer__title {
     font-family: "Shrikhand";
     margin-top: 2.5rem;
     margin-left: 2.4rem;
     font-size: 1.8rem;
     margin-bottom: 2rem; }
     @media screen and (min-width: 768px) {
-      .homefooter__title {
+      .footer__title {
         margin-left: 0; } }
-  .homefooter__menu {
+  .footer__menu {
     margin-left: 2.5rem; }
     @media screen and (min-width: 768px) {
-      .homefooter__menu {
+      .footer__menu {
         margin-left: 0; } }
-    .homefooter__menu__listewithicone {
+    .footer__menu__items {
+      margin-top: 0.9rem; }
+      .footer__menu__items--link, .footer__menu__items--link:visited, .footer__menu__items--link:hover, .footer__menu__items--link:link {
+        color: #ffffff; }
+    .footer__menu__itemswithicon {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       margin-top: 0.7rem; }
-      .homefooter__menu__listewithicone_logo1 {
+      .footer__menu__itemswithicon__fork {
         font-size: 1.3rem; }
-      .homefooter__menu__listewithicone_logo2 {
+        .footer__menu__itemswithicon__fork__txt {
+          margin-left: 1.2rem;
+          margin-top: 0.1rem; }
+      .footer__menu__itemswithicon__hands {
         font-size: 0.9rem; }
-      .homefooter__menu__listewithicone__title1 {
-        font-size: 1.6rem;
-        margin-left: 1.2rem;
-        margin-top: 0.1rem; }
-      .homefooter__menu__listewithicone__title2 {
-        font-size: 1.6rem;
-        margin-left: 1.1rem;
-        margin-top: 0.1rem; }
-    .homefooter__menu__title {
-      font-size: 1.6rem;
-      margin-top: 0.9rem; }
-
-@media screen and (min-width: 768px) {
-  .homefooter__container {
-    display: inline-block;
-    width: 33.5rem; } }
+        .footer__menu__itemswithicon__hands__txt {
+          margin-left: 1.1rem;
+          margin-top: 0.1rem; }
 
 .menufooter {
   background-color: #353535;
@@ -1445,7 +1446,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   opacity: 0; }
 
 .index--loading {
@@ -1460,7 +1460,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 5rem;
   background: linear-gradient(180deg, #cecece 0%, #d5d5d5 1%, #dddddd 2%, #e3e3e3 3%, #e8e8e8 4%, #eaeaea 100%); }
   .location__mylocation {
@@ -1519,7 +1519,7 @@ body {
     margin-top: 2.1rem; }
 
 .restaurants {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   background-color: #f6f6f6;
