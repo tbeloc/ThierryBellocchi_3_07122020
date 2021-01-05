@@ -20,6 +20,15 @@
   }
 }
 
+@keyframes transition-color {
+  from {
+  }
+  to {
+    background-color: #f5edff;
+    opacity: 0.8;
+  }
+}
+
 @keyframes anim-menu-btn-i {
   from {
     transform: rotate(0deg);
