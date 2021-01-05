@@ -22,61 +22,6 @@
   color: $font_color_primary;
 }
 
-@mixin btn__fonctionnement(
-  $root-mt,
-  $num-mt,
-  $logo-mt,
-  $logo-bt,
-  $txt-w,
-  $txt-mr,
-  $txt-mt
-) {
-  @include flex-row-c-c;
-  width: 32.2rem;
-  height: 7.3rem;
-  border-radius: 2rem;
-  font-size: 1.6rem;
-  font-weight: bold;
-  background-color: $background_color_secondary;
-  box-shadow: 0.7rem 0.7rem 0.7rem $box_shadow_secondary;
-  border: none;
-  transition: 0.3s ease-in-out;
-  margin-top: $root-mt;
-
-  &__num {
-    @include flex-row-c-c;
-    width: 2.4rem;
-    height: 2.4rem;
-    position: relative;
-    left: -3rem;
-    margin-top: $num-mt;
-    border-radius: 2rem;
-    background-color: $color_primary;
-    color: $font_color_secondary;
-    font-size: 1.4rem;
-    font-weight: 400;
-  }
-
-  &__logo {
-    color: $color_logo;
-    font-size: 2rem;
-    margin-top: $logo-mt;
-  }
-
-  &__txt {
-    @include flex-row-c-c;
-    width: $txt-w;
-    margin-right: $txt-mr;
-    margin-top: $txt-mt;
-  }
-
-  &:hover {
-    cursor: pointer;
-    animation: transition-color 500ms;
-    animation-fill-mode: forwards;
-  }
-}
-
 @mixin card_restaurant($position_pourcentage) {
   width: $restaurants_width;
   height: 25.1rem;
@@ -179,11 +124,7 @@
       }
     }
   }
-  &:hover {
-    // opacity: 0.6;
-    // box-shadow: 0.9rem 0.9rem 0.9rem #ededed;
-    // transition: all 0.3s ease-in-out;
-  }
+
   // A comprendre
   * > .fa-hover-show,
   *:hover > .fa-hover-hidden {
@@ -223,3 +164,65 @@
     @content;
   }
 }
+
+//Ori
+// @mixin btn__fonctionnement(
+//   $root-mt,
+//   $num-mt,
+//   $logo-mt,
+//   $logo-bt,
+//   $txt-w,
+//   $txt-mr,
+//   $txt-mt
+// ) {
+//   @include flex-row-c-c;
+//   width: 32.2rem;
+//   height: 7.3rem;
+//   border-radius: 2rem;
+//   font-size: 1.6rem;
+//   font-weight: bold;
+//   background-color: $background_color_secondary;
+//   box-shadow: 0.7rem 0.7rem 0.7rem $box_shadow_secondary;
+//   border: none;
+//   transition: 0.3s ease-in-out;
+//   margin-top: $root-mt;
+//   @media screen and (min-width: 992px) and (max-width: 1439px) {
+//     width: 26rem;
+//     margin-top: 0;
+//   }
+//   @media screen and (min-width: 1440px) {
+//   }
+
+//   &__num {
+//     @include flex-row-c-c;
+//     width: 2.4rem;
+//     height: 2.4rem;
+//     position: relative;
+//     left: -3rem;
+//     margin-top: $num-mt;
+//     border-radius: 2rem;
+//     background-color: $color_primary;
+//     color: $font_color_secondary;
+//     font-size: 1.4rem;
+//     font-weight: 400;
+//   }
+
+//   &__logo {
+//     color: $color_logo;
+//     font-size: 2rem;
+//     margin-top: $logo-mt;
+//   }
+
+//   &__txt {
+//     @include flex-row-c-c;
+//     width: $txt-w;
+//     margin-right: $txt-mr;
+//     margin-top: $txt-mt;
+//   }
+
+//   &:hover {
+//     cursor: pointer;
+//     animation: transition-color 500ms;
+//     animation-fill-mode: forwards;
+//   }
+// }

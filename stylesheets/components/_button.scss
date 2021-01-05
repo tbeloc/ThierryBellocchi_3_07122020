@@ -37,36 +37,203 @@
     }
   }
   &__choisissez {
-    @include btn__fonctionnement(
-      1.1rem,
-      0.4rem,
-      0rem,
-      0rem,
-      23.3rem,
-      1rem,
-      0.3rem
-    );
+    @include flex-row-c-c;
+    width: 32.2rem;
+    height: 7.3rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: $background_color_secondary;
+    box-shadow: 0.7rem 0.7rem 0.7rem $box_shadow_secondary;
+    border: none;
+    transition: 0.3s ease-in-out;
+    margin-top: 1.1rem;
+    @media screen and (min-width: 992px) and (max-width: 1439px) {
+      width: 26rem;
+      margin-top: 0;
+    }
+    @media screen and (min-width: 1440px) {
+    }
+
+    &__num {
+      @include flex-row-c-c;
+      width: 2.4rem;
+      height: 2.4rem;
+      position: relative;
+      left: -3rem;
+      margin-top: 0.4rem;
+      border-radius: 2rem;
+      background-color: $color_primary;
+      color: $font_color_secondary;
+      font-size: 1.4rem;
+      font-weight: 400;
+      @media screen and (min-width: 992px) and (max-width: 1439px) {
+        width: 2.7rem;
+        left: -2rem;
+        margin-top: 0;
+      }
+      @media screen and (min-width: 1440px) {
+      }
+    }
+
+    &__logo {
+      color: $color_logo;
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    &__txt {
+      @include flex-row-c-c;
+      width: 23.3rem;
+      margin-right: 1rem;
+      margin-top: 0.3rem;
+      @media screen and (min-width: 992px) and (max-width: 1439px) {
+        margin-right: 0;
+        margin-top: 0;
+      }
+      @media screen and (min-width: 1440px) {
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      animation: transition-color 500ms;
+      animation-fill-mode: forwards;
+    }
   }
   &__composez {
-    @include btn__fonctionnement(
-      2.2rem,
-      0.7rem,
-      0.8rem,
-      0rem,
-      20.3rem,
-      3.4rem,
-      0.9rem
-    );
+    @include flex-row-c-c;
+    width: 32.2rem;
+    height: 7.3rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: $background_color_secondary;
+    box-shadow: 0.7rem 0.7rem 0.7rem $box_shadow_secondary;
+    border: none;
+    transition: 0.3s ease-in-out;
+    margin-top: 2.2rem;
+    @media screen and (min-width: 992px) and (max-width: 1439px) {
+      width: 26rem;
+      margin-top: 0;
+    }
+    @media screen and (min-width: 1440px) {
+    }
+
+    &__num {
+      @include flex-row-c-c;
+      width: 2.4rem;
+      height: 2.4rem;
+      position: relative;
+      left: -3rem;
+      margin-top: 0.7rem;
+      border-radius: 2rem;
+      background-color: $color_primary;
+      color: $font_color_secondary;
+      font-size: 1.4rem;
+      font-weight: 400;
+      @media screen and (min-width: 992px) and (max-width: 1439px) {
+        width: 2.5rem;
+        left: -2rem;
+        margin-top: 0;
+      }
+      @media screen and (min-width: 1440px) {
+      }
+    }
+
+    &__logo {
+      color: $color_logo;
+      font-size: 2rem;
+      margin-top: 0.8rem;
+      @media screen and (min-width: 992px) and (max-width: 1439px) {
+        margin-top: 0;
+      }
+      @media screen and (min-width: 1440px) {
+      }
+    }
+
+    &__txt {
+      @include flex-row-c-c;
+      width: 20.3rem;
+      margin-right: 3.4rem;
+      margin-top: 0.9rem;
+      @media screen and (min-width: 992px) and (max-width: 1439px) {
+        margin-right: 0;
+        margin-top: 0;
+      }
+      @media screen and (min-width: 1440px) {
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      animation: transition-color 500ms;
+      animation-fill-mode: forwards;
+    }
   }
   &__degustez {
-    @include btn__fonctionnement(
-      2.7rem,
-      0.3rem,
-      0rem,
-      0.2rem,
-      20.3rem,
-      3rem,
-      0.3rem
-    );
+    @include flex-row-c-c;
+    width: 32.2rem;
+    height: 7.3rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: $background_color_secondary;
+    box-shadow: 0.7rem 0.7rem 0.7rem $box_shadow_secondary;
+    border: none;
+    transition: 0.3s ease-in-out;
+    margin-top: 2.7rem;
+    @media screen and (min-width: 992px) and (max-width: 1439px) {
+      width: 26rem;
+      margin-top: 0;
+    }
+    @media screen and (min-width: 1440px) {
+    }
+
+    &__num {
+      @include flex-row-c-c;
+      width: 2.4rem;
+      height: 2.4rem;
+      position: relative;
+      left: -3rem;
+      margin-top: 0.3rem;
+      border-radius: 2rem;
+      background-color: $color_primary;
+      color: $font_color_secondary;
+      font-size: 1.4rem;
+      font-weight: 400;
+      @media screen and (min-width: 992px) and (max-width: 1439px) {
+        width: 2.5rem;
+        margin-top: 0;
+        left: -2rem;
+      }
+      @media screen and (min-width: 1440px) {
+      }
+    }
+
+    &__logo {
+      color: $color_logo;
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    &__txt {
+      @include flex-row-c-c;
+      width: 20.3rem;
+      margin-right: 3rem;
+      margin-top: 0.3rem;
+      @media screen and (min-width: 992px) and (max-width: 1439px) {
+        margin-right: 0;
+        margin-top: 0;
+      }
+      @media screen and (min-width: 1440px) {
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      animation: transition-color 500ms;
+      animation-fill-mode: forwards;
+    }
   }
 }
