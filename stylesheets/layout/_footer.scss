@@ -2,27 +2,31 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .footer {
+  display: flex;
+  justify-content: center;
   opacity: 0;
   background-color: $background_color_footer;
   width: 100%;
   height: 20rem;
   padding-top: 1rem;
   color: $font_color_secondary;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-  }
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  //   justify-content: center;
+  // }
   &__container {
     margin-top: -1rem;
-    @media screen and (min-width: 768px) {
-      display: inline-block;
-      width: 33.5rem;
-    }
+    display: inline-block;
+    width: 33.5rem;
+    // @media screen and (min-width: 768px) {
+    //   display: inline-block;
+    //   width: 33.5rem;
+    // }
   }
   &__title {
     font-family: $font_type_secondary;
     margin-top: 2.5rem;
-    margin-left: 2.4rem;
+    margin-left: 0.4rem;
     font-size: 1.8rem;
     margin-bottom: 2rem;
     @media screen and (min-width: 768px) {
@@ -30,7 +34,7 @@
     }
   }
   &__menu {
-    margin-left: 2.5rem;
+    margin-left: 0.5rem;
     @media screen and (min-width: 768px) {
       margin-left: 0;
     }
