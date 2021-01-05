@@ -172,16 +172,17 @@
         color: black;
       }
 
-      &--like {
-        background: -webkit-linear-gradient(#a45cdc, #e471da);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+      &--like:hover {
+        animation: gradient-heart;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
       }
     }
   }
   &:hover {
-    opacity: 0.6;
-    transition: 0.3s ease-in-out;
+    // opacity: 0.6;
+    // box-shadow: 0.9rem 0.9rem 0.9rem #ededed;
+    // transition: all 0.3s ease-in-out;
   }
   // A comprendre
   * > .fa-hover-show,

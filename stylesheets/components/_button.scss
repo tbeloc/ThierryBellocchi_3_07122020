@@ -14,12 +14,25 @@
     border-radius: 3rem;
     border-style: none;
     box-shadow: 0.7rem 0.7rem 0.7rem $box_shadow_primary;
-    background: $background_gradient_btn;
     font-weight: 500;
     color: $font_color_secondary;
-    transition: all 0.3s ease-in-out;
+
+    background: linear-gradient(
+      to right,
+      rgb(214, 107, 219) 0%,
+      #99e2d0 50%,
+      rgb(255, 121, 218) 100%
+    );
+
+    background-size: 500%;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
     &:hover {
-      opacity: 0.6;
+      animation-name: gradientposition;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
       cursor: pointer;
     }
   }
