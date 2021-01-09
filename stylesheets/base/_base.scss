@@ -10,9 +10,9 @@ html {
   @media screen and (min-width: 768px) and (max-width: 991px) {
     font-size: 90%;
   }
-  // @media screen and (min-width: 992px) and (max-width: 1439px) {
-  //   font-size: 100%;
-  // }
+  @media screen and (min-width: 992px) {
+    font-size: 69%;
+  }
   // @media screen and (min-width: 1440px) {
   //   font-size: 125%;
   // }
@@ -26,6 +26,11 @@ h1,
 h2 {
   margin: 0;
   // line-height: 0;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.6rem;
 }
 
 p {

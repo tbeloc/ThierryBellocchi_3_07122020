@@ -6,15 +6,15 @@
   justify-content: center;
   opacity: 0;
   background-color: $background_color_footer;
-  width: 100%;
-  height: 20rem;
+  // width: 100%;
+  // height: 20rem;
   padding-top: 1rem;
   color: $font_color_secondary;
   @media screen and (min-width: 992px) {
     @include flex-col-c-c;
   }
   &__container {
-    margin-top: -1rem;
+    // margin-top: -1rem;
     display: inline-block;
     width: 33.5rem;
     @media screen and (min-width: 992px) {
@@ -22,20 +22,22 @@
     }
   }
   &__title {
+    margin: 0;
     font-family: $font_type_secondary;
     margin-top: 2.5rem;
     margin-left: 0.4rem;
     font-size: 1.8rem;
     margin-bottom: 2rem;
-    @media screen and (min-width: 768px) {
-      margin-left: 0;
-    }
-    @media screen and (min-width: 992px) {
-      margin: 0;
-    }
+    // @media screen and (min-width: 768px) {
+    //   margin-left: 0;
+    // }
+    // @media screen and (min-width: 992px) {
+    //   margin: 0;
+    // }
   }
   &__menu {
     margin-left: 0.5rem;
+    margin-bottom: 2rem;
     @media screen and (min-width: 768px) {
       margin-left: 0;
     }
