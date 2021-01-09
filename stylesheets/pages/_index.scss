@@ -93,23 +93,18 @@ $circle-inc: 50ms;
 }
 
 .fonctionnement {
-  // @media screen and (min-width: 0px) and (max-width: 991px) {
   @include flex-col-c-c;
   margin-top: 2.7rem;
-  // }
   @media screen and (min-width: 992px) {
     @include flex-row-c-c;
-    // margin-top: 2.7rem;
     margin-bottom: 6.7rem;
   }
   &__title {
-    // @media screen and (min-width: 0px) and (max-width: 991px) {
     font-size: 2.4rem;
     align-self: flex-start;
     margin-top: 2.1rem;
     margin-bottom: 2rem;
-    // }
-    @media screen and (min-width: 992px) and (max-width: 1439px) {
+    @media screen and (min-width: 992px) {
       @include flex-row-c-c;
       margin-left: 0;
       margin-bottom: 6rem;
@@ -117,7 +112,7 @@ $circle-inc: 50ms;
     }
   }
   &__container {
-    @media screen and (min-width: 992px) and (max-width: 1439px) {
+    @media screen and (min-width: 992px) {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
