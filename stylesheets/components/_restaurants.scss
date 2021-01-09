@@ -1,10 +1,7 @@
 .restaurants {
   &__1 {
     @include card_restaurant(102%);
-    @media screen and (min-width: 0px) and (max-width: 991px) {
-      margin-bottom: 1.8rem;
-      margin-right: auto;
-    }
+    margin-right: auto;
     @media screen and (min-width: 992px) {
       margin-bottom: 9rem;
       margin-right: 0;
@@ -12,9 +9,6 @@
   }
   &__2 {
     @include card_restaurant(61%);
-    @media screen and (min-width: 0px) and (max-width: 991px) {
-      margin-bottom: 1.8rem;
-    }
     @media screen and (min-width: 992px) {
       margin-bottom: 9rem;
       margin-right: auto;
@@ -22,19 +16,14 @@
   }
   &__3 {
     @include card_restaurant(95%);
-    @media screen and (min-width: 0px) and (max-width: 991px) {
-      margin-bottom: 1.8rem;
-      margin-right: auto;
-    }
+    margin-right: auto;
     @media screen and (min-width: 992px) {
       margin-bottom: 9rem;
+      margin-right: 0;
     }
   }
   &__4 {
     @include card_restaurant(95%);
-    @media screen and (min-width: 0px) and (max-width: 991px) {
-      margin-bottom: 1.8rem;
-    }
     @media screen and (min-width: 992px) {
       margin-bottom: 9rem;
       margin-right: auto;
