@@ -22,6 +22,12 @@ body {
   font-size: 1.6rem;
 }
 
+h1,
+h2 {
+  margin: 0;
+  // line-height: 0;
+}
+
 p {
   margin: 0;
 }

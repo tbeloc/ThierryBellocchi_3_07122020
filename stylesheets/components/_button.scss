@@ -35,6 +35,11 @@
       animation-fill-mode: forwards;
       cursor: pointer;
     }
+    @media screen and (min-width: 992px) and (max-width: 1439px) {
+      margin-left: 0;
+      padding-left: 0;
+      width: 22rem;
+    }
   }
   &__choisissez {
     @include flex-row-c-c;
