@@ -69,6 +69,7 @@
   }
   &__menu {
     animation: fadein;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
   }
 }

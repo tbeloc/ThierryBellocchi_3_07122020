@@ -490,6 +490,7 @@ body {
 
 .fadein__menu {
   animation: fadein;
+  animation-duration: 1s;
   animation-fill-mode: forwards; }
 
 .btn--intro {
@@ -1182,323 +1183,6 @@ body {
     display: inline-block;
     width: 33.5rem; } }
 
-.menumain {
-  display: flex;
-  flex-direction: column;
-  background-color: #f6f6f6; }
-  .menumain__photo {
-    width: 100vw;
-    object-fit: cover; }
-    .menumain__photo__resto {
-      width: 37.6rem;
-      height: 27rem;
-      object-fit: cover;
-      margin: auto; }
-  .menumain__carte {
-    display: flex;
-    background-color: #f6f6f6;
-    border-radius: 4rem 4rem 0 0;
-    position: relative;
-    top: -5.2rem; }
-    .menumain__carte__title {
-      font-family: "Shrikhand";
-      font-size: 2.7rem;
-      margin-left: 2.1rem;
-      margin-top: 3.7rem; }
-    .menumain__carte__avis {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2.4rem;
-      /* margin-bottom: 0.8rem; */
-      /* margin-right: 2.3rem; */
-      margin-left: 9.8rem;
-      margin-top: 1.1rem; }
-      .menumain__carte__avis:visited, .menumain__carte__avis:link, .menumain__carte__avis:active {
-        text-decoration: none; }
-      .menumain__carte__avis--nolike {
-        color: black; }
-      .menumain__carte__avis--like {
-        background: -webkit-linear-gradient(#a45cdc, #e471da);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; }
-  .menumain__entree {
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f6f6f6;
-    margin-top: 0rem;
-    animation: fadein 1s 0.5s forwards; }
-    .menumain__entree__title {
-      opacity: 0;
-      animation: fadein 1s 0.5s forwards;
-      font-weight: 400;
-      font-size: 1.6rem;
-      margin-left: 2rem;
-      margin-top: -3.5rem;
-      padding-bottom: 0.5rem; }
-    .menumain__entree__title:after {
-      content: "";
-      display: block;
-      border-bottom: 0.3rem solid #99e2d0;
-      width: 4rem;
-      position: relative;
-      bottom: -0.5rem; }
-    .menumain__entree__plat {
-      background-color: white;
-      display: flex;
-      width: 35rem;
-      height: 7rem;
-      border-radius: 1rem;
-      margin-bottom: 1.1rem; }
-      .menumain__entree__plat__nomdescription {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        width: 100%;
-        display: block; }
-        .menumain__entree__plat__nomdescription__nom {
-          font-size: 1.8rem;
-          font-weight: 500;
-          padding-left: 1.2rem;
-          padding-top: 1.4rem;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          width: 100%;
-          display: block; }
-        .menumain__entree__plat__nomdescription__description {
-          padding-left: 1.2rem;
-          font-size: 1.5rem;
-          padding-top: 0.6rem;
-          font-weight: 300;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          display: block;
-          margin: auto;
-          padding-right: 2rem; }
-      .menumain__entree__plat__prix {
-        min-width: 5.8rem;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        padding-bottom: 1.2rem;
-        font-size: 1.5rem;
-        font-weight: 500; }
-      .menumain__entree__plat__circle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.9rem;
-        overflow: hidden;
-        width: 0rem;
-        background-color: #99e2d0;
-        border-radius: 0 1rem 1rem 0;
-        color: white;
-        transition: width 400ms; }
-      .menumain__entree__plat:hover {
-        cursor: pointer; }
-      .menumain__entree__plat:hover > .menumain__entree__plat__circle {
-        width: 25%; }
-      .menumain__entree__plat:hover > .menumain__entree__plat__circle > .menumain__entree__plat__circle__i {
-        animation: anim-menu-btn-i 500ms; }
-  .menumain__plats {
-    opacity: 0;
-    animation: fadein 1s 1s forwards;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f6f6f6;
-    margin-top: 0rem; }
-    .menumain__plats__title {
-      opacity: 0;
-      animation: fadein 1s 1s forwards;
-      font-weight: 400;
-      font-size: 1.6rem;
-      margin-left: 2rem;
-      margin-top: 3rem;
-      padding-bottom: 0.5rem; }
-    .menumain__plats__title:after {
-      content: "";
-      display: block;
-      border-bottom: 0.3rem solid #99e2d0;
-      width: 4rem;
-      position: relative;
-      bottom: -0.5rem; }
-    .menumain__plats__plat {
-      background-color: white;
-      display: flex;
-      width: 35rem;
-      height: 7rem;
-      border-radius: 1rem;
-      margin-bottom: 1.1rem; }
-      .menumain__plats__plat__nomdescription {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        width: 100%;
-        display: block; }
-        .menumain__plats__plat__nomdescription__nom {
-          font-size: 1.8rem;
-          font-weight: 500;
-          padding-left: 1.2rem;
-          padding-top: 1.4rem;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          width: 100%;
-          display: block; }
-        .menumain__plats__plat__nomdescription__description {
-          padding-left: 1.2rem;
-          font-size: 1.5rem;
-          padding-top: 0.6rem;
-          font-weight: 300;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          display: block;
-          margin: auto;
-          padding-right: 2rem; }
-      .menumain__plats__plat__prix {
-        min-width: 5.8rem;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        padding-bottom: 1.2rem;
-        font-size: 1.5rem;
-        font-weight: 500; }
-      .menumain__plats__plat__circle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.9rem;
-        overflow: hidden;
-        width: 0rem;
-        background-color: #99e2d0;
-        border-radius: 0 1rem 1rem 0;
-        color: white;
-        transition: width 400ms; }
-    .menumain__plats__plat:hover {
-      cursor: pointer; }
-    .menumain__plats__plat:hover > .menumain__plats__plat__circle {
-      width: 25%; }
-    .menumain__plats__plat:hover > .menumain__plats__plat__circle > .menumain__plats__plat__circle__i {
-      animation: anim-menu-btn-i 500ms; }
-  .menumain__desserts {
-    opacity: 0;
-    animation: fadein 1s 1.5s forwards;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f6f6f6;
-    margin-top: 0rem; }
-    .menumain__desserts__title {
-      opacity: 0;
-      animation: fadein 1s 1.5s forwards;
-      font-weight: 400;
-      font-size: 1.6rem;
-      margin-left: 2rem;
-      margin-top: 4rem;
-      padding-bottom: 0.5rem; }
-    .menumain__desserts__title:after {
-      content: "";
-      display: block;
-      border-bottom: 0.3rem solid #99e2d0;
-      width: 4rem;
-      position: relative;
-      bottom: -0.5rem; }
-    .menumain__desserts__plat {
-      background-color: white;
-      display: flex;
-      width: 35rem;
-      height: 7rem;
-      border-radius: 1rem;
-      margin-bottom: 1.1rem; }
-      .menumain__desserts__plat__nomdescription {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        width: 100%;
-        display: block; }
-        .menumain__desserts__plat__nomdescription__nom {
-          font-size: 1.8rem;
-          font-weight: 500;
-          padding-left: 1.2rem;
-          padding-top: 1.4rem;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          width: 100%;
-          display: block; }
-        .menumain__desserts__plat__nomdescription__description {
-          padding-left: 1.2rem;
-          font-size: 1.5rem;
-          padding-top: 0.6rem;
-          font-weight: 300;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          display: block;
-          margin: auto;
-          padding-right: 2rem; }
-      .menumain__desserts__plat__prix {
-        min-width: 5.8rem;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        padding-bottom: 1.2rem;
-        font-size: 1.5rem;
-        font-weight: 500; }
-      .menumain__desserts__plat__circle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.9rem;
-        overflow: hidden;
-        width: 0rem;
-        background-color: #99e2d0;
-        border-radius: 0 1rem 1rem 0;
-        color: white;
-        transition: width 400ms; }
-      .menumain__desserts__plat:hover {
-        cursor: pointer; }
-      .menumain__desserts__plat:hover > .menumain__desserts__plat__circle {
-        width: 25%; }
-      .menumain__desserts__plat:hover > .menumain__desserts__plat__circle > .menumain__desserts__plat__circle__i {
-        animation: anim-menu-btn-i 500ms; }
-  .menumain * > .fa-hover-show,
-  .menumain *:hover > .fa-hover-hidden {
-    display: none; }
-  .menumain *:hover > .fa-hover-show {
-    display: inline-block; }
-  .menumain__btn {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    margin-bottom: 3.5rem; }
-    .menumain__btn__commander {
-      height: 5rem;
-      width: 19rem;
-      color: white;
-      border-radius: 3rem;
-      border-style: none;
-      margin-top: 4.3rem;
-      /* margin-left: 0.6rem; */
-      background: linear-gradient(166deg, #d66bdb 0%, #e46fda 22%, #d96cdb 43%, #a85cdb 82%);
-      font-size: 1.6rem;
-      font-weight: 500;
-      font-family: "ROBOTO";
-      padding-bottom: 0.3rem;
-      /* padding-left: 0.8rem; */
-      box-shadow: 0.7rem 0.7rem 0.7rem #c8c8c8;
-      margin-bottom: 4.7rem;
-      transition: all 0.3s ease-in-out; }
-      .menumain__btn__commander:hover {
-        opacity: 0.6;
-        cursor: pointer; }
-
 .circle--rotate-1, .circle--rotate-2, .circle--rotate-3, .circle--rotate-4, .circle--rotate-5, .circle--rotate-6, .circle--rotate-7, .circle--rotate-8, .circle--rotate-9, .circle--rotate-10, .circle--rotate-11, .circle--rotate-12, .circle--rotate-13, .circle--rotate-14 {
   display: flex;
   justify-content: center;
@@ -1681,3 +1365,362 @@ body {
       width: 85rem;
       justify-content: center;
       align-items: center; } }
+
+.menu__main {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6; }
+  .menu__main__photo {
+    width: 100vw;
+    object-fit: cover; }
+    .menu__main__photo__resto {
+      width: 100%;
+      height: 27rem;
+      object-fit: cover;
+      margin: auto;
+      object-position: 50% 72%; }
+  .menu__main__carte {
+    display: flex;
+    background-color: #f6f6f6;
+    border-radius: 4rem 4rem 0 0;
+    position: relative;
+    top: -5.2rem;
+    margin-bottom: 2rem; }
+    @media screen and (min-width: 768px) {
+      .menu__main__carte {
+        justify-content: center; } }
+    .menu__main__carte__title {
+      font-family: "Shrikhand";
+      font-size: 2.7rem;
+      margin-left: 2.1rem;
+      margin-top: 3.7rem; }
+      @media screen and (min-width: 768px) {
+        .menu__main__carte__title {
+          margin-left: 0; } }
+    .menu__main__carte__avis {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.4rem;
+      /* margin-bottom: 0.8rem; */
+      /* margin-right: 2.3rem; */
+      margin-left: 9.8rem;
+      margin-top: 1.1rem; }
+      .menu__main__carte__avis:visited, .menu__main__carte__avis:link, .menu__main__carte__avis:active {
+        text-decoration: none; }
+      .menu__main__carte__avis--nolike {
+        color: black; }
+      .menu__main__carte__avis--like {
+        background: -webkit-linear-gradient(#a45cdc, #e471da);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+  .menu__main__entree {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    margin-top: 0rem;
+    animation: fadein 1s 0.5s forwards; }
+    .menu__main__entree__title {
+      opacity: 0;
+      animation: fadein 1s 0.5s forwards;
+      font-weight: 400;
+      font-size: 1.6rem;
+      margin-left: 2rem;
+      margin-top: -3.5rem;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+      align-self: flex-start; }
+      @media screen and (min-width: 768px) {
+        .menu__main__entree__title {
+          width: 34.5rem;
+          justify-content: flex-start;
+          display: flex;
+          align-self: initial; } }
+    .menu__main__entree__title:after {
+      content: "";
+      display: block;
+      border-bottom: 0.3rem solid #99e2d0;
+      width: 4rem;
+      position: relative;
+      bottom: -0.5rem; }
+      @media screen and (min-width: 768px) {
+        .menu__main__entree__title:after {
+          left: -6.7rem; } }
+    .menu__main__entree__plat {
+      background-color: white;
+      display: flex;
+      width: 35rem;
+      height: 7rem;
+      border-radius: 1rem;
+      margin-bottom: 1.1rem; }
+      .menu__main__entree__plat__nomdescription {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+        display: block; }
+        .menu__main__entree__plat__nomdescription__nom {
+          font-size: 1.8rem;
+          font-weight: 500;
+          padding-left: 1.2rem;
+          padding-top: 1.4rem;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          width: 100%;
+          display: block; }
+        .menu__main__entree__plat__nomdescription__description {
+          padding-left: 1.2rem;
+          font-size: 1.5rem;
+          padding-top: 0.6rem;
+          font-weight: 300;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: block;
+          margin: auto;
+          padding-right: 2rem; }
+      .menu__main__entree__plat__prix {
+        min-width: 5.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500; }
+      .menu__main__entree__plat__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.9rem;
+        overflow: hidden;
+        width: 0rem;
+        background-color: #99e2d0;
+        border-radius: 0 1rem 1rem 0;
+        color: white;
+        transition: width 400ms; }
+      .menu__main__entree__plat:hover {
+        cursor: pointer; }
+      .menu__main__entree__plat:hover > .menu__main__entree__plat__circle {
+        width: 25%; }
+      .menu__main__entree__plat:hover > .menu__main__entree__plat__circle > .menum__ain__entree__plat__circle__i {
+        animation: anim-menu-btn-i 500ms; }
+  .menu__main__plats {
+    opacity: 0;
+    animation: fadein 1s 1s forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    margin-top: 0rem; }
+    .menu__main__plats__title {
+      opacity: 0;
+      animation: fadein 1s 1s forwards;
+      font-weight: 400;
+      font-size: 1.6rem;
+      margin-left: 2rem;
+      margin-top: 3rem;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+      align-self: flex-start; }
+      @media screen and (min-width: 768px) {
+        .menu__main__plats__title {
+          width: 34.5rem;
+          justify-content: flex-start;
+          display: flex;
+          align-self: initial; } }
+    .menu__main__plats__title:after {
+      content: "";
+      display: block;
+      border-bottom: 0.3rem solid #99e2d0;
+      width: 4rem;
+      position: relative;
+      bottom: -0.5rem; }
+      @media screen and (min-width: 768px) {
+        .menu__main__plats__title:after {
+          left: -4.7rem; } }
+    .menu__main__plats__plat {
+      background-color: white;
+      display: flex;
+      width: 35rem;
+      height: 7rem;
+      border-radius: 1rem;
+      margin-bottom: 1.1rem; }
+      .menu__main__plats__plat__nomdescription {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+        display: block; }
+        .menu__main__plats__plat__nomdescription__nom {
+          font-size: 1.8rem;
+          font-weight: 500;
+          padding-left: 1.2rem;
+          padding-top: 1.4rem;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          width: 100%;
+          display: block; }
+        .menu__main__plats__plat__nomdescription__description {
+          padding-left: 1.2rem;
+          font-size: 1.5rem;
+          padding-top: 0.6rem;
+          font-weight: 300;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: block;
+          margin: auto;
+          padding-right: 2rem; }
+      .menu__main__plats__plat__prix {
+        min-width: 5.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500; }
+      .menu__main__plats__plat__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.9rem;
+        overflow: hidden;
+        width: 0rem;
+        background-color: #99e2d0;
+        border-radius: 0 1rem 1rem 0;
+        color: white;
+        transition: width 400ms; }
+    .menu__main__plats__plat:hover {
+      cursor: pointer; }
+    .menu__main__plats__plat:hover > .menu__main__plats__plat__circle {
+      width: 25%; }
+    .menu__main__plats__plat:hover > .menu__main__plats__plat__circle > .menu__main__plats__plat__circle__i {
+      animation: anim-menu-btn-i 500ms; }
+  .menu__main__desserts {
+    opacity: 0;
+    animation: fadein 1s 1.5s forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    margin-top: 0rem; }
+    .menu__main__desserts__title {
+      opacity: 0;
+      animation: fadein 1s 1.5s forwards;
+      font-weight: 400;
+      font-size: 1.6rem;
+      margin-left: 2rem;
+      margin-top: 4rem;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+      align-self: flex-start; }
+      @media screen and (min-width: 768px) {
+        .menu__main__desserts__title {
+          width: 34.5rem;
+          justify-content: flex-start;
+          display: flex;
+          align-self: initial; } }
+    .menu__main__desserts__title:after {
+      content: "";
+      display: block;
+      border-bottom: 0.3rem solid #99e2d0;
+      width: 4rem;
+      position: relative;
+      bottom: -0.5rem; }
+      @media screen and (min-width: 768px) {
+        .menu__main__desserts__title:after {
+          left: -7.5rem; } }
+    .menu__main__desserts__plat {
+      background-color: white;
+      display: flex;
+      width: 35rem;
+      height: 7rem;
+      border-radius: 1rem;
+      margin-bottom: 1.1rem; }
+      .menu__main__desserts__plat__nomdescription {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+        display: block; }
+        .menu__main__desserts__plat__nomdescription__nom {
+          font-size: 1.8rem;
+          font-weight: 500;
+          padding-left: 1.2rem;
+          padding-top: 1.4rem;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          width: 100%;
+          display: block; }
+        .menu__main__desserts__plat__nomdescription__description {
+          padding-left: 1.2rem;
+          font-size: 1.5rem;
+          padding-top: 0.6rem;
+          font-weight: 300;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: block;
+          margin: auto;
+          padding-right: 2rem; }
+      .menu__main__desserts__plat__prix {
+        min-width: 5.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500; }
+      .menu__main__desserts__plat__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.9rem;
+        overflow: hidden;
+        width: 0rem;
+        background-color: #99e2d0;
+        border-radius: 0 1rem 1rem 0;
+        color: white;
+        transition: width 400ms; }
+      .menu__main__desserts__plat:hover {
+        cursor: pointer; }
+      .menu__main__desserts__plat:hover > .menu__main__desserts__plat__circle {
+        width: 25%; }
+      .menu__main__desserts__plat:hover > .menu__main__desserts__plat__circle > .menu__main__desserts__plat__circle__i {
+        animation: anim-menu-btn-i 500ms; }
+  .menu__main * > .fa-hover-show,
+  .menu__main *:hover > .fa-hover-hidden {
+    display: none; }
+  .menu__main *:hover > .fa-hover-show {
+    display: inline-block; }
+  .menu__main__btn {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 3.5rem; }
+    .menu__main__btn__commander {
+      height: 5rem;
+      width: 19rem;
+      color: white;
+      border-radius: 3rem;
+      border-style: none;
+      margin-top: 4.3rem;
+      /* margin-left: 0.6rem; */
+      background: linear-gradient(166deg, #d66bdb 0%, #e46fda 22%, #d96cdb 43%, #a85cdb 82%);
+      font-size: 1.6rem;
+      font-weight: 500;
+      font-family: "ROBOTO";
+      padding-bottom: 0.3rem;
+      /* padding-left: 0.8rem; */
+      box-shadow: 0.7rem 0.7rem 0.7rem #c8c8c8;
+      margin-bottom: 4.7rem;
+      transition: all 0.3s ease-in-out; }
+      .menu__main__btn__commander:hover {
+        opacity: 0.6;
+        cursor: pointer; }
