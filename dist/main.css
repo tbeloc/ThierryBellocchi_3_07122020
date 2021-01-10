@@ -1073,7 +1073,6 @@ body {
   justify-content: center;
   opacity: 0;
   background-color: #353535;
-  padding-top: 1rem;
   color: #ffffff; }
   @media screen and (min-width: 992px) {
     .footer {
@@ -1097,6 +1096,9 @@ body {
     margin-left: 0.4rem;
     font-size: 1.8rem;
     margin-bottom: 2rem; }
+    @media screen and (min-width: 992px) {
+      .footer__title {
+        margin-bottom: 1rem; } }
   .footer__menu {
     margin-left: 0.5rem;
     margin-bottom: 2rem; }
@@ -1601,7 +1603,6 @@ body {
     width: 28rem;
     margin-top: 4rem;
     margin-bottom: 0;
-    margin-left: -1.6rem;
     font-size: 2.4rem;
     font-weight: bold;
     text-align: center; }
