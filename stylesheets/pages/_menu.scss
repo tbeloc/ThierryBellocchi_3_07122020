@@ -83,7 +83,7 @@
         margin-bottom: 2rem;
         align-self: flex-start;
         @media screen and (min-width: 768px) {
-          width: 34.5rem;
+          width: 45rem;
           justify-content: flex-start;
           display: flex;
           align-self: initial;
@@ -107,6 +107,9 @@
         height: 7rem;
         border-radius: 1rem;
         margin-bottom: 1.1rem;
+        @media screen and (min-width: 768px) {
+          width: 45rem;
+        }
         &__nomdescription {
           text-overflow: ellipsis;
           overflow: hidden;
@@ -167,7 +170,7 @@
 
         &:hover
           > .menu__main__entree__plat__circle
-          > .menum__ain__entree__plat__circle__i {
+          > .menum__main__entree__plat__circle__i {
           animation: anim-menu-btn-i 500ms;
         }
       }
@@ -193,7 +196,7 @@
         margin-bottom: 2rem;
         align-self: flex-start;
         @media screen and (min-width: 768px) {
-          width: 34.5rem;
+          width: 45rem;
           justify-content: flex-start;
           display: flex;
           align-self: initial;
@@ -217,6 +220,9 @@
         height: 7rem;
         border-radius: 1rem;
         margin-bottom: 1.1rem;
+        @media screen and (min-width: 768px) {
+          width: 45rem;
+        }
         &__nomdescription {
           text-overflow: ellipsis;
           overflow: hidden;
@@ -304,7 +310,7 @@
         margin-bottom: 2rem;
         align-self: flex-start;
         @media screen and (min-width: 768px) {
-          width: 34.5rem;
+          width: 45rem;
           justify-content: flex-start;
           display: flex;
           align-self: initial;
@@ -328,6 +334,9 @@
         height: 7rem;
         border-radius: 1rem;
         margin-bottom: 1.1rem;
+        @media screen and (min-width: 768px) {
+          width: 45rem;
+        }
         &__nomdescription {
           text-overflow: ellipsis;
           overflow: hidden;

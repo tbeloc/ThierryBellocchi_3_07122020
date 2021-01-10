@@ -1436,7 +1436,7 @@ body {
       align-self: flex-start; }
       @media screen and (min-width: 768px) {
         .menu__main__entree__title {
-          width: 34.5rem;
+          width: 45rem;
           justify-content: flex-start;
           display: flex;
           align-self: initial; } }
@@ -1457,6 +1457,9 @@ body {
       height: 7rem;
       border-radius: 1rem;
       margin-bottom: 1.1rem; }
+      @media screen and (min-width: 768px) {
+        .menu__main__entree__plat {
+          width: 45rem; } }
       .menu__main__entree__plat__nomdescription {
         text-overflow: ellipsis;
         overflow: hidden;
@@ -1506,7 +1509,7 @@ body {
         cursor: pointer; }
       .menu__main__entree__plat:hover > .menu__main__entree__plat__circle {
         width: 25%; }
-      .menu__main__entree__plat:hover > .menu__main__entree__plat__circle > .menum__ain__entree__plat__circle__i {
+      .menu__main__entree__plat:hover > .menu__main__entree__plat__circle > .menum__main__entree__plat__circle__i {
         animation: anim-menu-btn-i 500ms; }
   .menu__main__plats {
     opacity: 0;
@@ -1529,7 +1532,7 @@ body {
       align-self: flex-start; }
       @media screen and (min-width: 768px) {
         .menu__main__plats__title {
-          width: 34.5rem;
+          width: 45rem;
           justify-content: flex-start;
           display: flex;
           align-self: initial; } }
@@ -1550,6 +1553,9 @@ body {
       height: 7rem;
       border-radius: 1rem;
       margin-bottom: 1.1rem; }
+      @media screen and (min-width: 768px) {
+        .menu__main__plats__plat {
+          width: 45rem; } }
       .menu__main__plats__plat__nomdescription {
         text-overflow: ellipsis;
         overflow: hidden;
@@ -1622,7 +1628,7 @@ body {
       align-self: flex-start; }
       @media screen and (min-width: 768px) {
         .menu__main__desserts__title {
-          width: 34.5rem;
+          width: 45rem;
           justify-content: flex-start;
           display: flex;
           align-self: initial; } }
@@ -1643,6 +1649,9 @@ body {
       height: 7rem;
       border-radius: 1rem;
       margin-bottom: 1.1rem; }
+      @media screen and (min-width: 768px) {
+        .menu__main__desserts__plat {
+          width: 45rem; } }
       .menu__main__desserts__plat__nomdescription {
         text-overflow: ellipsis;
         overflow: hidden;
