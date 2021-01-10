@@ -61,8 +61,14 @@
 }
 
 .fadein {
-  animation: fadein;
-  animation-delay: 3s;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  &__index {
+    animation: fadein;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  &__menu {
+    animation: fadein;
+    animation-fill-mode: forwards;
+  }
 }

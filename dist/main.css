@@ -338,7 +338,8 @@ h1,
 h2 {
   margin: 0; }
 
-h3 {
+h3,
+h4 {
   margin: 0;
   font-size: 1.6rem; }
 
@@ -481,10 +482,14 @@ body {
   100% {
     background-position: 100%; } }
 
-.fadein {
+.fadein__index {
   animation: fadein;
   animation-delay: 3s;
   animation-duration: 2s;
+  animation-fill-mode: forwards; }
+
+.fadein__menu {
+  animation: fadein;
   animation-fill-mode: forwards; }
 
 .btn--intro {
@@ -747,8 +752,7 @@ body {
     .restaurants__1__specification__txt {
       align-self: center;
       margin-left: 1.3rem;
-      width: 26rem;
-      font-size: 1.8rem; }
+      width: 26rem; }
       .restaurants__1__specification__txt__plat {
         font-weight: bold;
         height: 2.5rem; }
@@ -835,8 +839,7 @@ body {
     .restaurants__2__specification__txt {
       align-self: center;
       margin-left: 1.3rem;
-      width: 26rem;
-      font-size: 1.8rem; }
+      width: 26rem; }
       .restaurants__2__specification__txt__plat {
         font-weight: bold;
         height: 2.5rem; }
@@ -924,8 +927,7 @@ body {
     .restaurants__3__specification__txt {
       align-self: center;
       margin-left: 1.3rem;
-      width: 26rem;
-      font-size: 1.8rem; }
+      width: 26rem; }
       .restaurants__3__specification__txt__plat {
         font-weight: bold;
         height: 2.5rem; }
@@ -1012,8 +1014,7 @@ body {
     .restaurants__4__specification__txt {
       align-self: center;
       margin-left: 1.3rem;
-      width: 26rem;
-      font-size: 1.8rem; }
+      width: 26rem; }
       .restaurants__4__specification__txt__plat {
         font-weight: bold;
         height: 2.5rem; }
